@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+}
+
+header {
+    background-color: rgb(141, 191, 204);
+}
+
+.logo img {
+    width: 7rem;
+}
+
+.usuarioIcono img {
+  margin-top: 1rem;
+    width: 3rem;
+}
+
+.nav-item {
+    margin: 1rem;
+    text-align: center;
+    background-color: rgb(216, 77, 73);
+    border: solid white;
+    border-radius: 20%;
+}
+.usuarioIcono {
+    
+    background-color: rgb(141, 191, 204);
+    border: none;
+    
+}
+
+.nav-item a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    border-color: white;
+    font-size: 1rem;
+}
+main{
+    background-color: rgb(251, 187, 185);
+}
+h1{
+    text-align: center;
+    padding: 2rem;
+    font-size: 3rem;
+    color: white;
+    font-weight: bold;
+  
+}
+.principal{
+    padding-bottom: 4rem;
+}
+.contenido{
+    text-align: center;
+}
+.videoInicial iframe {
+    border-radius: 10%;
+    border: solid white;
+}
+.tituloTres {
+    grid-area: tituloTres;
+    background-color: rgb(251, 187, 185);
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5rem;
+    background-color: rgb(216, 77, 73);
+    color: white;
+    padding: 1rem;
+}
+section img,
+.section2 img,
+.section3 img {
+    margin: 20px auto;
+    border-radius: 30px;
+    padding: 10px;
+    width: 20rem;
+    height: 15rem;
+    cursor: pointer;
+    transition: .5s ease-in-out;
+}
+
+section:hover img,
+.section2:hover img,
+.section3:hover img {
+    transform: scale(1.1);  
+}
+section,
+.section2,
+.section3 {
+    background-color: rgb(251, 187, 185);
+    text-align: center;
+    height: 25rem;
+    font-size: 1.7rem;
+}
+footer {
+    grid-area: footer;
+    background-color: rgb(141, 191, 204);
+    height: 7rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 0.5rem;
+    height: auto;
+}
+
+.textoFooter {
+    text-align: center;
+    font-size: 1.2rem;
+    margin-top: 1rem;
+}
+
+.redes img {
+    width: 2.5rem;
+    margin: 0.8rem;
+}
