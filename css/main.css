@@ -5,73 +5,55 @@
     font-family: 'Josefin Sans', sans-serif;
     font-family: 'Roboto', sans-serif;
     text-align: center;
+    color: white;
+ 
 }
-
-header {
-    background-color: rgb(141, 191, 204);
-}
-
-.logo img {
-    width: 7rem;
-}
-
-.usuarioIcono img {
-  margin-top: 1rem;
-    width: 3rem;
-}
-
-.nav-item {
-    margin: 1rem;
-    text-align: center;
-    background-color: rgb(216, 77, 73);
-    border: solid white;
-    border-radius: 20%;
-}
-.usuarioIcono {
+.bodyIndex{
+    background-image: url("https://pixabay.com/get/g7742ceb5a0f83aa2da0e9806da1a658ff3066bcbacde69387ce29c684c6f8111db1c384e2ad274ebfc3fad81781c57a867bf319a7bce0eeb20ff714865aadd4fea6366f19a8cf1a1977293bf2c8da886_1920.jpg");
+    background-position: top;
     
-    background-color: rgb(141, 191, 204);
-    border: none;
-    
+    background-size: cover;
 }
+
+
+.imgLogo{
+    width: 6rem;
+}
+
 
 .nav-item a{
+   margin: 1rem;
+   color: solid white;
+   font-size: 1rem;
+   
+}
+
+}
+.navbar-nav {
+    
     text-decoration: none;
-    color: black;
+    color: solid white;
     font-weight: bold;
-    border-color: white;
+    border-color: black;
     font-size: 1rem;
 }
 main{
-    background-color: rgb(251, 187, 185);
-}
-h1{
-    text-align: center;
-    padding: 2rem;
-    font-size: 3rem;
-    color: white;
-    font-weight: bold;
-  
-}
-.principal{
-    padding-bottom: 4rem;
+  margin-top: 10rem;
 }
 .contenido{
-    text-align: center;
+    display: flex;
+    justify-content: center;
 }
-.videoInicial iframe {
-    border-radius: 10%;
-    border: solid white;
+.contenido img{
+    width: auto;
+    transition: .5s ease-in-out;
 }
-.tituloTres {
-    grid-area: tituloTres;
-    background-color: rgb(251, 187, 185);
-    text-align: center;
-    font-weight: bold;
-    font-size: 1.5rem;
-    background-color: rgb(216, 77, 73);
-    color: white;
-    padding: 1rem;
+
+.contenido:hover img {
+    transform: scale(1.1); 
 }
+
+
 section img,
 .section2 img,
 .section3 img {
@@ -92,15 +74,16 @@ section:hover img,
 section,
 .section2,
 .section3 {
-    background-color: rgb(251, 187, 185);
+    background-color: ;
     text-align: center;
     height: 25rem;
     font-size: 1.7rem;
 }
 footer {
+    margin-top: 10rem;
     grid-area: footer;
-    background-color: rgb(141, 191, 204);
-    height: 7rem;
+    
+   
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -109,13 +92,20 @@ footer {
     height: auto;
 }
 
-.textoFooter {
+.textoFooter h5{
     text-align: center;
-    font-size: 1.2rem;
-    margin-top: 1rem;
+    font-size: 0.8rem;
+    margin-top: 0.5rem;
 }
 
 .redes img {
-    width: 2.5rem;
+    width: 2rem;
     margin: 0.8rem;
+}
+@media only screen and (min-width:992px){
+    .contenido img{
+        width: 24rem;
+        
+    }
+
 }
