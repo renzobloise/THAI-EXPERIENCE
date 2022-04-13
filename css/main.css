@@ -4,53 +4,64 @@
     box-sizing: border-box;
     font-family: 'Josefin Sans', sans-serif;
     font-family: 'Roboto', sans-serif;
-    text-align: center;
     color: white;
- 
+
 }
-.bodyIndex{
-    background-image: url("https://pixabay.com/get/g7742ceb5a0f83aa2da0e9806da1a658ff3066bcbacde69387ce29c684c6f8111db1c384e2ad274ebfc3fad81781c57a867bf319a7bce0eeb20ff714865aadd4fea6366f19a8cf1a1977293bf2c8da886_1920.jpg");
+
+.bodyIndex {
+    background-image: url("../images/fondoIndex.jpg");
     background-position: top;
-    
+
     background-size: cover;
 }
 
 
-.imgLogo{
+.imgLogo {
     width: 6rem;
 }
 
 
-.nav-item a{
-   margin: 1rem;
-   color: solid white;
-   font-size: 1rem;
-   
-}
+.nav-item a {
+    margin: 1rem;
+    color: solid white;
+    font-size: 1rem;
 
 }
+
+
 .navbar-nav {
-    
+
     text-decoration: none;
     color: solid white;
     font-weight: bold;
     border-color: black;
     font-size: 1rem;
 }
-main{
-  margin-top: 10rem;
+
+main {
+    margin-top: 10rem;
 }
-.contenido{
+
+.contenido {
     display: flex;
     justify-content: center;
 }
-.contenido img{
-    width: auto;
-    transition: .5s ease-in-out;
+
+.contenido h1 {
+    font-size: 3rem;
+    font-weight: bold;
 }
 
-.contenido:hover img {
-    transform: scale(1.1); 
+.contenido a {
+    width: auto;
+    transition: .5s ease-in-out;
+    text-decoration: none;
+    text-align: center;
+}
+
+.contenido:hover a {
+    transform: scale(1.2);
+    ;
 }
 
 
@@ -69,8 +80,9 @@ section img,
 section:hover img,
 .section2:hover img,
 .section3:hover img {
-    transform: scale(1.1);  
+    transform: scale(1.1);
 }
+
 section,
 .section2,
 .section3 {
@@ -79,11 +91,12 @@ section,
     height: 25rem;
     font-size: 1.7rem;
 }
+
 footer {
     margin-top: 10rem;
     grid-area: footer;
-    
-   
+
+
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -92,7 +105,7 @@ footer {
     height: auto;
 }
 
-.textoFooter h5{
+.textoFooter h5 {
     text-align: center;
     font-size: 0.8rem;
     margin-top: 0.5rem;
@@ -102,10 +115,12 @@ footer {
     width: 2rem;
     margin: 0.8rem;
 }
-@media only screen and (min-width:992px){
-    .contenido img{
-        width: 24rem;
-        
+
+@media only screen and (min-width:992px) {
+    .contenido h1 {
+        font-size: 5rem;
+        font-weight: bold;
     }
+
 
 }
