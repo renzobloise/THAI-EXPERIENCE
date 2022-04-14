@@ -22,8 +22,7 @@
 <body>
     <div class="bodyQuienes">
         <div class="contenedorTres">
-            <!-- HEADER: LOGO, MENU E ICONO DE USUARIO  -->
-            <!-- HEADER: Estructuro solo el header con bootstrap por el menu de navegación -->
+            <!-- HEADER -->
             <header class="container-fluid">
                 <div class="row barraNav ">
                     <nav class="navbar navbar-expand-md navbar-dark bg-dark  fixed-top   menu-nav ">
@@ -39,7 +38,8 @@
                             <div class="collapse navbar-collapse" id="navbar-1">
                                 <ul class="navbar-nav me-2 mb-2 mb-lg-1">
                                     <li class="nav-item">
-                                        <a class="nav-link" aria-current="page" href="../pages/quienesSomos.html">
+                                        <a class="nav-link active" aria-current="page"
+                                            href="../pages/quienesSomos.html">
                                             Quiénes Somos</a>
                                     </li>
                                     <li class="nav-item dropdown">
@@ -51,9 +51,9 @@
                                             <li>
                                                 <hr class="dropdown-divider">
                                             </li>
-                                            <li><a class="dropdown-item" href="quinceDias.html">15 días</a></li>
-                                            <li><a class="dropdown-item" href="treintaDias.html">30 días</a></li>
-                                            <li><a class="dropdown-item" href="experienciaCompleta.html">La Experiencia
+                                            <li><a class="dropdown-item" href="subPaginas/quinceDias.html">15 días</a></li>
+                                            <li><a class="dropdown-item" href="subPaginas/treintaDias.html">30 días</a></li>
+                                            <li><a class="dropdown-item" href="subPaginas/experienciaCompleta.html">La Experiencia
                                                     Completa</a></li>
                                         </ul>
                                     </li>
@@ -62,13 +62,17 @@
                                             data-bs-toggle="dropdown" aria-expanded="false"> Recorrido
                                             Virtual</a>
                                         <ul class="dropdown-menu bg-dark" aria-labelledby="navbarDropdown">
-
-                                            <li><a class="dropdown-item"
-                                                    href="../pages/recorridoVirtual.html">Bangkok</a>
+                                            <li><a class="dropdown-item"  href="recorridoVirtual.html">Recorrido Virtual</a>
                                             </li>
-                                            <li><a class="dropdown-item" href="#">Norte</a></li>
-                                            <li><a class="dropdown-item" href="#">Centro</a></li>
-                                            <li><a class="dropdown-item" href="#">Sur</a></li>
+                                            <li>
+                                                <hr class="dropdown-divider">
+                                            </li>
+                                            <li><a class="dropdown-item"
+                                                    href="subPaginas/bangkok.html">Bangkok</a>
+                                            </li>
+                                            <li><a class="dropdown-item" href="subPaginas/norte.html">Norte</a></li>
+                                            <li><a class="dropdown-item" href="subPaginas/centro.html">Centro</a></li>
+                                            <li><a class="dropdown-item" href="subPaginas/sur.html">Sur</a></li>
                                         </ul>
                                     </li>
                                     <li class="nav-item">
@@ -81,32 +85,42 @@
                 </div>
             </header>
 
-            <!-- MAIN: Título, imagen y texto  -->
-            <main class="tituloQuienesSomos">
-                <h1>QUIÉNES SOMOS</h1>
+            <!-- MAIN:  -->
+            <main class="container mainSomos ">
+
+                <div class="row ">
+
+                    <div class=" col-12  d-flex justify-content-center text-center tituloSomos">
+
+                        <h1>SOMOS TU ESCAPE DE LA REALIDAD</h1>
+                    </div>
+                </div>
+                <div class="row ">
+                    <div class=" col-12  d-flex text-center parrafoSomos ">
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aut a veritatis non, culpa
+                            enim minus
+                            eius
+                            voluptatem quibusdam nam velit nesciunt asperiores cupiditate provident repellat
+                            laborum
+                            aliquam,
+                            quasi
+                            id architecto! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic tempore
+                            quaerat
+                            placeat
+                            a? Atque,
+                            vitae
+                            quibusdam soluta nostrum a quae illum sed aperiam, beatae amet nam sequi! In,
+                            necessitatibus
+                            tempora!
+                        </p>
+                    </div>
+                </div>
+
+
+
             </main>
-
-
-
-            <section class="textoQuienesSomos">
-                <h2>SOMOS TU ESCAPE DE LA REALIDAD</h2>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aut a veritatis non, culpa enim minus
-                    eius
-                    voluptatem quibusdam nam velit nesciunt asperiores cupiditate provident repellat laborum
-                    aliquam,
-                    quasi
-                    id architecto! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic tempore quaerat placeat
-                    a? Atque,
-                    vitae
-                    quibusdam soluta nostrum a quae illum sed aperiam, beatae amet nam sequi! In, necessitatibus
-                    tempora!
-                </p>
-
-            </section>
-
             <!-- FOOTER  -->
-            <!-- FOOTER  -->
-
+       
             <footer class="container-fluid ">
                 <div class="row">
                     <div class=" col-12 redes d-flex justify-content-center">

@@ -20,307 +20,159 @@
 </head>
 
 <body>
-    <!-- HEADER: LOGO, MENU E ICONO DE USUARIO  -->
-    <div class="contenedorDos">
-        <header>
-            <div class="logo">
-                <a href="../index.html"> <img class=imgLogo src="../images/logoSinFondo.png" alt="logo"
-                        title="Thai Adventure"></a>
+
+    <div class="bodyRecorrido">
+
+        <div class="container-fluid principalRecorrido">
+            <div class="row">
+                <header class="container-fluid col-12">
+                    <div class="row barraNav ">
+                        <nav class="navbar navbar-expand-md navbar-dark bg-dark  fixed-top   menu-nav ">
+                            <div class="container-fluid">
+                                <a class="navbar-brand " href="../index.html"> <img class=imgLogo
+                                        src="../images/logoSinFondo.png" alt="logo" title="Thai Project"></a>
+
+                                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#navbar-1" aria-controls="navbar-1" aria-expanded="false"
+                                    aria-label="Toggle navigation">
+                                    <span class="navbar-toggler-icon"></span>
+                                </button>
+                                <div class="collapse navbar-collapse" id="navbar-1">
+                                    <ul class="navbar-nav me-2 mb-2 mb-lg-1">
+                                        <li class="nav-item">
+                                            <a class="nav-link" aria-current="page" href="../pages/quienesSomos.html">
+                                                Quiénes Somos</a>
+                                        </li>
+                                        <li class="nav-item dropdown">
+                                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown"
+                                                role="button" data-bs-toggle="dropdown"
+                                                aria-expanded="false">Experiencias</a>
+                                            <ul class="dropdown-menu bg-dark" aria-labelledby="navbarDropdown">
+                                                <li><a class="dropdown-item" href="experiencias.html">Experiencias</a>
+                                                </li>
+                                                <li>
+                                                    <hr class="dropdown-divider">
+                                                </li>
+                                                <li><a class="dropdown-item" href="subPaginas/quinceDias.html">15 días</a></li>
+                                                <li><a class="dropdown-item" href="subPaginas/treintaDias.html">30 días</a></li>
+                                                <li><a class="dropdown-item" href="subPaginas/experienciaCompleta.html">La
+                                                        Experiencia
+                                                        Completa</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="nav-item dropdown">
+                                            <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown"
+                                                role="button" data-bs-toggle="dropdown" aria-expanded="false"> Recorrido
+                                                Virtual</a>
+                                            <ul class="dropdown-menu bg-dark" aria-labelledby="navbarDropdown">
+                                                <li><a class="dropdown-item" href="recorridoVirtual.html">Recorrido
+                                                        Virtual</a>
+                                                </li>
+                                                <li>
+                                                    <hr class="dropdown-divider">
+                                                </li>
+                                                <li><a class="dropdown-item" href="subPaginas/bangkok.html">Bangkok</a>
+                                                </li>
+                                                <li><a class="dropdown-item" href="subPaginas/norte.html">Norte</a></li>
+                                                <li><a class="dropdown-item" href="subPaginas/centro.html">Centro</a></li>
+                                                <li><a class="dropdown-item" href="subPaginas/sur.html">Sur</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="../pages/contacto.html"> Contacto</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                </header>
             </div>
 
-            <div class="menu">
-                <nav>
-                    <ul>
-                        <li class="quienesSomos"> <a href="quienesSomos.html"> Quiénes <br> Somos</a> </li>
-                        <li class="adventures"> <a href="adventures.html"> Adventures </a> </li>
-                        <li class="recorridoVirtual"> <a href="recorridoVirtual.html"> Recorrido <br> Virtual</a> </li>
-                        <li class="contacto"> <a href="contacto.html"> Contacto</a> </li>
+            <div class="row filaDos">
+
+                <aside class="col-2 menuLateral">
+                    <h2>Recorrido Virtual</h2>
+                    <ul class="subMenuRecorrido">
+                        <li><a href="subPaginas/bangkok.html"> BANGKOK </a></li>
+                        <li><a href="subPaginas/norte.html"> NORTE </a></li>
+                        <li><a href="subPaginas/centro.html"> CENTRO </a></li>
+                        <li><a href="subPaginas/sur.html"> SUR </a></li>
                     </ul>
-                </nav>
-            </div>
-            <div class="usuario">
-                <a href="sesion.html"> <img class="imgUsuario" src="../images/usuario.png" alt="icono usuario"
-                        title="Inicia Sesion"></a>
-            </div>
-        </header>
+                </aside>
 
-        <!-- MAIN - CON EL TITULO Y LAS IMAGENES. En cada div con las imágenes he dejado un div para texto que aun no he usado y no estoy seguro de si lo voy a usar, pero lo dejo por las dudas  -->
+                <div class="col-10">
+                    <main>
+                        <div class="container-fluid">
+                            <div class="row">
+                                <h1 class=" col-12 titulo3">Recorrido Virtual</h1>
+                            </div>
+                            <div class="row ">
+                                <div class="opcion col-sm-12 col-lg-6 d-flex justify-content-center mt-4">
+                                    <div class="card" style="width: auto;">
+                                        <img src="../images/bangkok.jpg"  class="card-img-top" alt="Bangkok">
 
-        <main>
-            <h1 class="titulo3">Bangkok</h1>
-            <div class="mainRecorrido">
+                                        <a href="subPaginas/bangkok.html" class="btn btn-primary bg-dark">BANGKOK</a>
 
-                <div class="bangkokimages">
-                    <div class="galleryItem">
-                        <div class="image">
-                            <img src="../images/imgBangkok/1.jpg" alt="Bangkok 1">
-                        </div>
-                        <div class="text">
-                        </div>
-                    </div>
-                </div>
+                                    </div>
+                                </div>
+                                <div class="opcion col-sm-12 col-lg-6 d-flex justify-content-center mt-4">
+                                    <div class="card" style="width: auto;">
+                                        <img src="../images/norte.jpg" class="card-img-top" alt="norte">
 
-                <div class="bangkokimages">
-                    <div class="galleryItem">
-                        <div class="image">
-                            <img src="../images/imgBangkok/2.jpg" alt="Bangkok 2">
-                        </div>
-                        <div class="text">
-                        </div>
-                    </div>
-                </div>
+                                        <a href="subPaginas/norte.html" class="btn btn-primary bg-dark">NORTE</a>
 
-                <div class="bangkokimages">
-                    <div class="galleryItem">
-                        <div class="image">
-                            <img src="../images/imgBangkok/3.jpg" alt="Bangkok 3">
-                        </div>
-                        <div class="text">
-                        </div>
-                    </div>
-                </div>
+                                    </div>
+                                </div>
+                                <div class="opcion col-sm-12 col-lg-6 d-flex justify-content-center mt-4">
+                                    <div class="card" style="width: auto;">
+                                        <img src="../images/centro.jpg"  class="card-img-top" alt="centro">
 
-                <div class="bangkokimages">
-                    <div class="galleryItem">
-                        <div class="image">
-                            <img src="../images/imgBangkok/4.jpg" alt="Bangkok 4">
-                        </div>
-                        <div class="text">
-                        </div>
-                    </div>
-                </div>
+                                        <a href="subPaginas/centro.html" class="btn btn-primary bg-dark">CENTRO</a>
 
-                <div class="bangkokimages">
-                    <div class="galleryItem">
-                        <div class="image">
-                            <img src="../images/imgBangkok/5.jpg" alt="Bangkok 5">
-                        </div>
-                        <div class="text">
-                        </div>
-                    </div>
-                </div>
+                                    </div>
+                                </div>
+                                <div class="opcion col-sm-12 col-lg-6 d-flex justify-content-center mt-4">
+                                    <div class="card" style="width: auto;">
+                                        <img src="../images/sur.jpg" class="card-img-top" alt="sur">
 
-                <div class="bangkokimages">
-                    <div class="galleryItem">
-                        <div class="image">
-                            <img src="../images/imgBangkok/6.jpg" alt="Bangkok 6">
-                        </div>
-                        <div class="text">
-                        </div>
-                    </div>
-                </div>
+                                        <a href="subPaginas/sur.html" class="btn btn-primary bg-dark">SUR</a>
 
-                <div class="bangkokimages">
-                    <div class="galleryItem">
-                        <div class="image">
-                            <img src="../images/imgBangkok/7.jpg" alt="Bangkok 7">
+                                    </div>
+                                </div>
+                               
+                            </div>
                         </div>
-                        <div class="text">
-                        </div>
-                    </div>
-                </div>
+                    </main>
 
-                <div class="bangkokimages">
-                    <div class="galleryItem">
-                        <div class="image">
-                            <img src="../images/imgBangkok/8.jpg" alt="Bangkok 8">
+                    <footer>
+                        <div class="container-fluid col-12 ">
+                            <div class="row">
+                                <div class=" col-12 redes d-flex justify-content-center">
+                                    <img src="../images/instagram.png" alt="logo instagram">
+                                    <img src="../images/facebook.png" alt="logo facebook">
+                                    <img src="../images/tik-tok.png" alt="logo tik tok">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12 text-center textoFooter">
+                                    <h5>Todos los Derechos Reservados<h5>
+                                            <h5>by @rdesign</h5>
+                                </div>
+                            </div>
                         </div>
-                        <div class="text">
-                        </div>
-                    </div>
-                </div>
-
-                <div class="bangkokimages">
-                    <div class="galleryItem">
-                        <div class="image">
-                            <img src="../images/imgBangkok/9.jpg" alt="Bangkok 9">
-                        </div>
-                        <div class="text">
-                        </div>
-                    </div>
-                </div>
-
-                <div class="bangkokimages">
-                    <div class="galleryItem">
-                        <div class="image">
-                            <img src="../images/imgBangkok/10.jpg" alt="Bangkok 10">
-                        </div>
-                        <div class="text">
-                        </div>
-                    </div>
-                </div>
-
-                <div class="bangkokimages">
-                    <div class="galleryItem">
-                        <div class="image">
-                            <img src="../images/imgBangkok/11.jpg" alt=" Bangkok 11">
-                        </div>
-                        <div class="text">
-                        </div>
-                    </div>
-                </div>
-
-                <div class="bangkokimages">
-                    <div class="galleryItem">
-                        <div class="image">
-                            <img src="../images/imgBangkok/12.jpg" alt="Bangkok 12">
-
-                        </div>
-                        <div class="text">
-                        </div>
-                    </div>
-                </div>
-
-                <div class="bangkokimages">
-                    <div class="galleryItem">
-                        <div class="image">
-                            <img src="../images/imgBangkok/13.jpg" alt="Bangkok 13">
-                        </div>
-                        <div class="text">
-                        </div>
-                    </div>
-                </div>
-
-                <div class="bangkokimages">
-                    <div class="galleryItem">
-                        <div class="image">
-                            <img src="../images/imgBangkok/14.png" alt="Bangkok 14">
-                        </div>
-                        <div class="text">
-                        </div>
-                    </div>
-                </div>
-
-                <div class="bangkokimages">
-                    <div class="galleryItem">
-                        <div class="image">
-                            <img src="../images/imgBangkok/15.jpg" alt="Bangkok 15">
-                        </div>
-                        <div class="text">
-                        </div>
-                    </div>
-                </div>
-
-                <div class="bangkokimages">
-                    <div class="galleryItem">
-                        <div class="image">
-                            <img src="../images/imgBangkok/16.jpg" alt="Bangkok 16">
-                        </div>
-                        <div class="text">
-                        </div>
-                    </div>
-                </div>
-
-                <div class="bangkokimages">
-                    <div class="galleryItem">
-                        <div class="image">
-                            <img src="../images/imgBangkok/17.jpg" alt="Bangkok 17">
-                        </div>
-                        <div class="text">
-                        </div>
-                    </div>
-                </div>
-
-                <div class="bangkokimages">
-                    <div class="galleryItem">
-                        <div class="image">
-                            <img src="../images/imgBangkok/18.jpg" alt="Bangkok 18">
-                        </div>
-                        <div class="text">
-                        </div>
-                    </div>
-                </div>
-
-                <div class="bangkokimages">
-                    <div class="galleryItem">
-                        <div class="image">
-                            <img src="../images/imgBangkok/19.jpg" alt="Bangkok 19">
-
-                        </div>
-                        <div class="text">
-                        </div>
-                    </div>
-                </div>
-
-                <div class="bangkokimages">
-                    <div class="galleryItem">
-                        <div class="image">
-                            <img src="../images/imgBangkok/20.jpg" alt="Bangkok 20">
-                        </div>
-                        <div class="text">
-                        </div>
-                    </div>
-                </div>
-
-                <div class="bangkokimages">
-                    <div class="galleryItem">
-                        <div class="image">
-                            <img src="../images/imgBangkok/21.jpg" alt="Bangkok 21">
-                        </div>
-                        <div class="text">
-                        </div>
-                    </div>
-                </div>
-
-                <div class="bangkokimages">
-                    <div class="galleryItem">
-                        <div class="image">
-                            <img src="../images/imgBangkok/22.jpg" alt="Bangkok 22">
-                        </div>
-                        <div class="text">
-                        </div>
-                    </div>
-                </div>
-
-                <div class="bangkokimages">
-                    <div class="galleryItem">
-                        <div class="image">
-                            <img src="../images/imgBangkok/23.jpg" alt="Bangkok 23">
-                        </div>
-                        <div class="text">
-                        </div>
-                    </div>
-                </div>
-
-                <div class="bangkokimages">
-                    <div class="galleryItem">
-                        <div class="image">
-                            <img src="../images/imgBangkok/24.jpg" alt="Bangkok 24">
-                        </div>
-                        <div class="text">
-                        </div>
-                    </div>
+                    </footer>
                 </div>
 
             </div>
-        </main>
-
-        <!-- ASIDE CON MENU LATERAL PARA ACCEDER A LA GALERIA DE OTROS LUGARES  -->
-
-        <aside class="menuLateral">
-            <h2>Recorrido Virtual</h2>
-            <ul class="submenuRecorrido">
-                <li>BANGKOK</li>
-                <li>NORTE</li>
-                <li>CENTRO</li>
-                <li>SUR</li>
-            </ul>
-        </aside>
-
-        <!-- FOOTER  -->
-        <footer class="footerRecorrido">
-            <div class="redes">
-                <img src="../images/instagram.png" alt="logo instagram">
-                <img src="../images/facebook.png" alt="logo facebook">
-                <img src="../images/tik-tok.png" alt="logo tik tok">
-            </div>
-            <div class="textoFooter">
-                <h5>Todos los Derechos Reservados<h5>
-                        <h5>by @rdesign</h5>
-            </div>
-        </footer>
+        </div>
     </div>
 
+
+    <!--ENLACE JS  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
