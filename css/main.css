@@ -8,43 +8,37 @@
 
 }
 
+/* ESTRUCTURA DEL INDEX MOBILE  */
+
 .bodyIndex {
     background-image: url("../images/fondoIndex.jpg");
     background-position: top;
-
     background-size: cover;
 }
 
-
 .imgLogo {
-    width: 6rem;
+    width: 5rem;
 }
-
 
 .nav-item a {
     margin: 1rem;
     color: solid white;
     font-size: 1rem;
-
 }
 
-
 .navbar-nav {
-
     text-decoration: none;
     color: solid white;
     font-weight: bold;
-    border-color: black;
     font-size: 1rem;
+}
+
+.dropdown-item{
+ color:white;   
 }
 
 main {
     margin-top: 10rem;
-}
-
-.contenido {
-    display: flex;
-    justify-content: center;
 }
 
 .contenido h1 {
@@ -52,61 +46,26 @@ main {
     font-weight: bold;
 }
 
-.contenido a {
+.contenidoMain {
     width: auto;
     transition: .5s ease-in-out;
     text-decoration: none;
-    text-align: center;
 }
 
-.contenido:hover a {
+.contenidoMain:hover {
     transform: scale(1.2);
-    ;
 }
-
-
-section img,
-.section2 img,
-.section3 img {
-    margin: 20px auto;
-    border-radius: 30px;
-    padding: 10px;
-    width: 20rem;
-    height: 15rem;
-    cursor: pointer;
-    transition: .5s ease-in-out;
-}
-
-section:hover img,
-.section2:hover img,
-.section3:hover img {
-    transform: scale(1.1);
-}
-
-section,
-.section2,
-.section3 {
-    background-color: ;
-    text-align: center;
-    height: 25rem;
-    font-size: 1.7rem;
+a{
+    text-decoration: none;
 }
 
 footer {
     margin-top: 10rem;
-    grid-area: footer;
-
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     padding-top: 0.5rem;
     height: auto;
 }
 
 .textoFooter h5 {
-    text-align: center;
     font-size: 0.8rem;
     margin-top: 0.5rem;
 }
@@ -121,6 +80,73 @@ footer {
         font-size: 5rem;
         font-weight: bold;
     }
+    .redes img {
+        width: 2.5rem;
+        margin: 1rem;
+    }
+    .textoFooter h5 {
+        font-size: 1rem;
+    }
+}
 
+/* ESTRUCTURA experiencias */
+.bodyexperiencias {
+    background-image: url("../images/fondoProyectos.jpg");
+    background-position: top;
+    background-size: cover;
+}
+.titulo h1{
+    text-align: center;
+    font-size: 3rem;
+    font-weight: bold;
+    
+}
 
+.experiencias{
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    margin-left: 1rem;
+    justify-content: space-between;
+}
+
+.opciones{
+    margin: 1rem;
+    background-color: rgba(7, 115, 81, 0.5);
+    border-radius: 10%;
+    text-align: center;
+    transition: .5s ease-in-out;
+    
+}
+
+.opciones:hover {
+    transform: scale(1.1);
+}
+.opciones h3{
+    text-align: center;
+}
+/* PANTALLA TABLET Y DESKTOP EXPERIENCIAS  */
+@media only screen and (min-width:768px){
+    .titulo h1{
+        font-size: 5rem;
+    }
+
+    .experiencias{
+        margin-top: 4rem;
+       flex-direction: row;
+    }
+
+    .opciones h3{
+        font-size: 2rem;
+    }
+    .opciones p{
+        font-size: 1.2rem;
+    }
+}
+
+/* ESTRUCTURA Quienes Somos */
+.bodyQuienes {
+    background-image: url("../images/caratulaQuienes.jpg");
+    background-position: top;
+    background-size: cover;
 }
