@@ -55,6 +55,7 @@ main {
 .contenidoMain:hover {
     transform: scale(1.2);
 }
+
 a{
     text-decoration: none;
 }
@@ -75,7 +76,7 @@ footer {
     margin: 0.8rem;
 }
 
-@media only screen and (min-width:992px) {
+@media only screen and (min-width:768px) {
     .contenido h1 {
         font-size: 5rem;
         font-weight: bold;
@@ -95,11 +96,11 @@ footer {
     background-position: top;
     background-size: cover;
 }
+
 .titulo h1{
     text-align: center;
     font-size: 3rem;
     font-weight: bold;
-    
 }
 
 .experiencias{
@@ -115,8 +116,7 @@ footer {
     background-color: rgba(7, 115, 81, 0.5);
     border-radius: 10%;
     text-align: center;
-    transition: .5s ease-in-out;
-    
+    transition: .5s ease-in-out;   
 }
 
 .opciones:hover {
@@ -125,6 +125,7 @@ footer {
 .opciones h3{
     text-align: center;
 }
+
 /* PANTALLA TABLET Y DESKTOP EXPERIENCIAS  */
 @media only screen and (min-width:768px){
     .titulo h1{
