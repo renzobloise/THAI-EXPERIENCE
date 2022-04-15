@@ -46,7 +46,7 @@ main {
     font-weight: bold;
 }
 span{
-    display: block;
+    display: inline;
 }
 
 .contenidoMain {
