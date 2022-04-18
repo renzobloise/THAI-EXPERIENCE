@@ -14,6 +14,7 @@
     background-image: url("../images/fondoIndex.jpg");
     background-position: top;
     background-size: cover;
+    height: auto;
 }
 
 .imgLogo {
@@ -45,6 +46,7 @@ main {
     font-size: 3rem;
     font-weight: bold;
 }
+
 span{
     display: block;
 }
@@ -55,8 +57,6 @@ span{
     text-decoration: none;
     background-color: rgba(7, 115, 81, 0.4);
     margin: 1rem;
-
-
 }
 
 .contenidoMain:hover {
@@ -100,7 +100,45 @@ footer {
 
     .contenidoMain {
         margin: 5rem;
+    }
+}
+/* ESTILOS Quienes Somos */
+.bodyQuienes {
+    background-image: url("../images/caratulaQuienes.jpg");
+    background-position: top;
+    background-size: cover;
+    height: auto;
+}
 
+.mainSomos {
+    margin-top: 8rem;
+    background-color: rgba(227, 147, 28, 0.3);
+}
+
+.tituloSomos h1 {
+    font-size: 2rem;
+}
+
+.parrafoSomos {
+    margin-top: 1rem;
+}
+
+@media only screen and (min-width:768px) {
+    .mainSomos {
+        margin-top: 10rem;
+        background-color: transparent;
+    }
+
+    .tituloSomos h1 {
+        font-size: 4rem;
+    }
+
+    .parrafoSomos {
+        margin-top: 2rem;
+    }
+
+    .parrafoSomos {
+        font-size: 1.7rem;
     }
 }
 
@@ -109,6 +147,7 @@ footer {
     background-image: url("../images/fondoProyectos.jpg");
     background-position: top;
     background-size: cover;
+    height: auto;
 }
 
 .titulo h1 {
@@ -131,6 +170,7 @@ footer {
     border-radius: 10%;
     text-align: center;
     transition: .5s ease-in-out;
+  
 }
 
 .opciones:hover {
@@ -161,58 +201,18 @@ footer {
     }
 }
 
-/* ESTILOS Quienes Somos */
-.bodyQuienes {
-    background-image: url("../images/caratulaQuienes.jpg");
-    background-position: top;
-    background-size: cover;
-}
-
-.mainSomos {
-    margin-top: 8rem;
-    background-color: rgba(227, 147, 28, 0.3);
-
-}
-
-.tituloSomos h1 {
-    font-size: 2rem;
-
-}
-
-.parrafoSomos {
-    margin-top: 1rem;
-}
-
-@media only screen and (min-width:968px) {
-    .mainSomos {
-        margin-top: 10rem;
-        background-color: transparent;
-    }
-
-    .tituloSomos h1 {
-        font-size: 4rem;
-    }
-
-    .parrafoSomos {
-        margin-top: 2rem;
-    }
-
-    .parrafoSomos {
-        font-size: 1.7rem;
-    }
-}
 
 /* ESTILOS RECORRIDO VIRTUAL  */
 .bodyRecorrido {
     background-image: url(../images/fondoRecorrido.jpg);
     background-position: top;
     background-size: cover;
+    height: auto;
 }
 
 .principalRecorrido {
     margin-top: 0;
 }
-
 
 .menuLateral {
     background-color: rgba(227, 147, 28, 0.3);
@@ -248,7 +248,6 @@ footer {
 
 @media only screen and (min-width:768px) {
     .menuLateral {
-
         display: unset;
     }
 }
@@ -258,6 +257,7 @@ footer {
     background-image: url(../images/fondoContacto.jpg);
     background-position: top;
     background-size: cover;
+    height: auto;
 }
 .tituloContacto{
     margin-top: 10rem;
@@ -273,9 +273,7 @@ font-weight: bold;
     padding: 1rem;
     width: 22rem;
     border-radius: 10%;
-    
 }
-
 .campo {
     font-size: 1rem;
     margin: 1rem;
@@ -318,6 +316,5 @@ font-weight: bold;
     .iconos img {
         width: 70px;
         padding-bottom: 2rem;
-       
     }
 }
