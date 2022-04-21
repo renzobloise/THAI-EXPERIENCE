@@ -59,7 +59,7 @@ main {
     span {
         display: block;
     }
-
+    
     .contenidoMain {
         width: auto;
         transition: .5s ease-in-out;
@@ -84,12 +84,10 @@ footer {
     margin-top: 10rem;
     padding-top: 0.5rem;
     height: auto;
-
     h3 {
         font-size: 0.8rem;
         margin-top: 0.5rem;
     }
-
     .redes {
         img {
             width: 2rem;
@@ -105,14 +103,12 @@ footer {
             font-size: $tamaño-h1-principal;
             font-weight: $negrita-h1;
         }
-
         .contenidoMain {
             margin: 5rem;
         }
     }
 
     // FOOTER 
-
     footer {
         .redes {
             img {
@@ -120,11 +116,8 @@ footer {
                 margin: 1rem;
             }
         }
-
         h3 {
             font-size: 1rem;
         }
-
     }
-
 }
