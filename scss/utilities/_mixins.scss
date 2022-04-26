@@ -1,0 +1,15 @@
+@mixin flex{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+@mixin h1mobile{
+    text-align: center;
+    font-size: $tamanio-h1-mobile;
+    font-weight: $negrita-h1;
+}
+@mixin h1desktop{
+    font-size: $tamanio-h1-principal;
+    text-align: center;
+    font-weight: $negrita-h1;
+}

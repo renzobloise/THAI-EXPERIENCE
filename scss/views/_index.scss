@@ -1,0 +1,52 @@
+
+/*ESTILOS DEL INDEX MOBILE*/ 
+
+#bodyIndex{
+    background-image: url("../images/fondoIndex.jpg");
+    background-position: top;
+    background-size: cover;
+}
+
+main {
+    margin-top: $margen-top-primario;
+   
+    .contenidoMain {
+        width: auto;
+        transition: .5s ease-in-out;
+        text-decoration: none;
+        background-color: $color-con-transparencia-principal;
+        margin: 1rem;
+
+        h1 {
+            @include h1mobile;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        &:hover {
+            transform: scale(1.1);
+        }
+
+        p{
+            font-size: 2rem;
+            text-align: center;
+        }
+    }
+}
+
+/* ESTILOS INDEX PANTALLA DESKTOP */
+@media only screen and (min-width:768px) {
+    main {
+        .contenidoMain {
+            margin: 5rem;
+            h1 {
+                @include h1desktop;
+            }
+            p{
+                font-size: 3.5rem;
+            }
+        }
+    }
+}

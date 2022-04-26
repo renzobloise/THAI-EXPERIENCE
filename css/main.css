@@ -5,12 +5,8 @@
   font-family: "Josefin Sans", sans-serif;
   font-family: "Roboto", sans-serif;
   color: white; }
-
-.bodyIndex {
-  background-image: url("../images/fondoIndex.jpg");
-  background-position: top;
-  background-size: cover;
-  height: auto; }
+  * span {
+    display: block; }
 
 header .imgLogo {
   width: 5rem; }
@@ -29,43 +25,184 @@ header .navbar-nav {
 header .dropdown-item {
   color: white; }
 
+/* FOOTER PANTALLA MOBILE*/
+footer {
+  margin-top: 9rem;
+  padding-top: 0.5rem;
+  height: auto; }
+  footer .redes {
+    display: flex;
+    justify-content: center; }
+    footer .redes img {
+      width: 2rem;
+      margin: 0.8rem; }
+  footer .textoFooter {
+    padding-top: 1rem;
+    font-size: 1rem;
+    text-align: center;
+    font-weight: bold; }
+
+/* FOOTER PANTALLA DESKTOP*/
+@media only screen and (min-width: 768px) {
+  footer .redes img {
+    width: 2.5rem;
+    margin: 1rem; }
+  footer p {
+    font-size: 1rem; } }
+
+/*ESTILOS PARA EL FOOTER DE EXPERIENCIAS*/
+#footerExperiencias {
+  margin-top: 0rem;
+  margin-bottom: 0rem;
+  padding-top: 3rem; }
+
+/*ESTILOS DEL INDEX MOBILE*/
+#bodyIndex {
+  background-image: url("../images/fondoIndex.jpg");
+  background-position: top;
+  background-size: cover; }
+
 main {
   margin-top: 13rem; }
-  main h1 {
-    font-size: 3rem;
-    font-weight: bold; }
-  main span {
-    display: block; }
   main .contenidoMain {
     width: auto;
     transition: .5s ease-in-out;
     text-decoration: none;
     background-color: rgba(7, 115, 81, 0.4);
     margin: 1rem; }
+    main .contenidoMain h1 {
+      text-align: center;
+      font-size: 3rem;
+      font-weight: bold; }
     main .contenidoMain a {
       text-decoration: none; }
     main .contenidoMain:hover {
       transform: scale(1.1); }
+    main .contenidoMain p {
+      font-size: 2rem;
+      text-align: center; }
 
-footer {
-  margin-top: 10rem;
-  padding-top: 0.5rem;
-  height: auto; }
-  footer h3 {
-    font-size: 0.8rem;
-    margin-top: 0.5rem; }
-  footer .redes img {
-    width: 2rem;
-    margin: 0.8rem; }
-
+/* ESTILOS INDEX PANTALLA DESKTOP */
 @media only screen and (min-width: 768px) {
-  main h1 {
-    font-size: 5rem;
-    font-weight: bold; }
   main .contenidoMain {
     margin: 5rem; }
-  footer .redes img {
-    width: 2.5rem;
-    margin: 1rem; }
-  footer h3 {
-    font-size: 1rem; } }
+    main .contenidoMain h1 {
+      font-size: 5rem;
+      text-align: center;
+      font-weight: bold; }
+    main .contenidoMain p {
+      font-size: 3.5rem; } }
+
+/* ESTILOS Quienes Somos */
+#bodyQuienes {
+  background-image: url("../images/caratulaQuienes.jpg");
+  background-position: top;
+  background-size: cover;
+  height: auto; }
+
+.mainSomos {
+  margin-top: 8rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  background-color: rgba(227, 147, 28, 0.3);
+  text-align: center; }
+  .mainSomos h1 {
+    text-align: center;
+    font-size: 3rem;
+    font-weight: bold; }
+  .mainSomos p {
+    margin-top: 1rem;
+    font-size: 1.2rem; }
+
+@media only screen and (min-width: 768px) {
+  .mainSomos {
+    margin-top: 10rem; }
+    .mainSomos h1 {
+      font-size: 5rem;
+      text-align: center;
+      font-weight: bold; }
+    .mainSomos p {
+      margin-top: 2rem;
+      font-size: 1.7rem; } }
+
+.experiencias .opciones h2 {
+  padding-top: 2rem;
+  font-size: 2.5rem;
+  font-family: "Josefin Sans", sans-serif;
+  font-family: "Roboto", sans-serif; }
+
+/* Estilos experiencias */
+#bodyExperiencias {
+  background-color: #1b1f1e; }
+
+.mainExperiencias {
+  background-image: url("../images/fondoProyectos3.jpg");
+  background-position: top;
+  background-size: cover;
+  height: auto;
+  margin-top: -10rem; }
+  .mainExperiencias h1 {
+    padding-top: 5rem;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: bold; }
+  .mainExperiencias .primerParrafo {
+    display: flex;
+    justify-content: flex-end;
+    padding: 1rem; }
+    .mainExperiencias .primerParrafo p {
+      font-size: 1.3rem;
+      background-color: rgba(27, 31, 30, 0.5);
+      width: 20rem;
+      text-align: justify; }
+
+.experiencias {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; }
+  .experiencias .opciones {
+    margin: 1rem;
+    text-align: center; }
+    .experiencias .opciones h2 {
+      font-family: "Water Brush", cursive; }
+    .experiencias .opciones .descripcion {
+      font-size: 1.3rem; }
+      .experiencias .opciones .descripcion ul li {
+        padding-top: 1rem;
+        list-style: none; }
+      .experiencias .opciones .descripcion button {
+        background-color: #2a302f;
+        border: 0.1rem solid white;
+        padding: 0.3rem;
+        transition: .5s ease-in-out; }
+        .experiencias .opciones .descripcion button a {
+          font-size: 0.9rem;
+          text-decoration: none;
+          color: white; }
+        .experiencias .opciones .descripcion button:hover {
+          transform: scale(1.1); }
+
+/* PANTALLA TABLET Y DESKTOP EXPERIENCIAS  */
+@media only screen and (min-width: 768px) {
+  .mainExperiencias h1 {
+    font-size: 5rem;
+    text-align: center;
+    font-weight: bold; }
+  .mainExperiencias .primerParrafo {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 4rem; }
+    .mainExperiencias .primerParrafo p {
+      padding-top: 1rem;
+      font-size: 2.3rem;
+      width: 40rem; }
+  .experiencias .opciones h2 {
+    font-size: 4.5rem; }
+  .experiencias .opciones .descripcion p {
+    font-size: 2rem; }
+  .experiencias .opciones .descripcion ul li {
+    font-size: 2rem; }
+  .experiencias .opciones .descripcion button {
+    padding: 0.5rem; }
+    .experiencias .opciones .descripcion button a {
+      font-size: 1.5rem; } }

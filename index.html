@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <meta name="description" content="Hacemos todo para que tu viaje a Tailandia no sea sólo un viaje sino una experiencia de vida">
+    <meta name="keywords" content="TAILANDIA,THAI, THAILAND, EXPERIENCIA, VIAJES, AVENTURA, CULTURA, SUDESTE ASIATICO, ASIA, ISLAS, PLAYAS, TURISMO, BANGKOK, CIUDAD ">
     <!-- LINK DE ESTILOS DE BOOTSTRAP - -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
@@ -16,116 +17,90 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Roboto:wght@100&display=swap"
         rel="stylesheet">
-    <title>THAI PROJECT </title>
+    <title>Home - THE THAI EXPERIENCE </title>
     <link rel="shortcut icon" href="images/logoSinFondo.png" type="image/x-icon">
 </head>
 
-<!-- ESTE HTML ESTA ESTRUCTURADO CON BOOTSTRAP  -->
+<body id="bodyIndex">
 
-<body>
-    <div class="bodyIndex">
+    <!-- HEADER (Logo y menu de navegación con Bootstrap) -->
+    <header class="container-fluid">
+        <div class="row barraNav ">
+            <nav class="navbar navbar-expand-md navbar-dark bg-dark  fixed-top   menu-nav ">
+                <div class="container-fluid">
+                    <a class="navbar-brand " href="index.html"> <img class=imgLogo src="images/logoSinFondo.png"
+                            alt="logo" title="Thai Project"></a>
 
-        <!-- HEADER (Logo y menu de navegación) -->
-        <header class="container-fluid">
-            <div class="row barraNav ">
-                <nav class="navbar navbar-expand-md navbar-dark bg-dark  fixed-top   menu-nav ">
-                    <div class="container-fluid">
-                        <a class="navbar-brand " href="index.html"> <img class=imgLogo src="images/logoSinFondo.png"
-                                alt="logo" title="Thai Project"></a>
-
-                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#navbar-1" aria-controls="navbar-1" aria-expanded="false"
-                            aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
-                        <div class="collapse navbar-collapse" id="navbar-1">
-                            <ul class="navbar-nav me-2 mb-2 mb-lg-1">
-                                <li class="nav-item">
-                                    <a class="nav-link" aria-current="page" href="pages/quienesSomos.html"> Quiénes
-                                        Somos</a>
-                                </li>
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                                        data-bs-toggle="dropdown" aria-expanded="false">Experiencias</a>
-                                    <ul class="dropdown-menu bg-dark" aria-labelledby="navbarDropdown">
-                                        <li><a class="dropdown-item" href="pages/experiencias.html">Experiencias</a>
-                                        </li>
-                                        <li>
-                                            <hr class="dropdown-divider">
-                                        </li>
-                                        <li><a class="dropdown-item" href="pages/subPaginas/quinceDias.html">15 días</a></li>
-                                        <li><a class="dropdown-item" href="pages/subPaginas/treintaDias.html">30 días</a></li>
-                                        <li><a class="dropdown-item" href="pages/subPaginas/experienciaCompleta.html">La
-                                                Experiencia Completa</a></li>
-                                    </ul>
-                                </li>
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="" id="navbarDropdown" role="button"
-                                        data-bs-toggle="dropdown" aria-expanded="false"> Recorrido
-                                        Virtual</a>
-                                    <ul class="dropdown-menu bg-dark" aria-labelledby="navbarDropdown">
-                                        <li><a class="dropdown-item"  href="pages/recorridoVirtual.html">Recorrido Virtual</a>
-                                        </li>
-                                        <li>
-                                            <hr class="dropdown-divider">
-                                        </li>
-                                        <li><a class="dropdown-item" href="pages/subPaginas/bangkok.html">Bangkok</a>
-                                        </li>
-                                        <li><a class="dropdown-item" href="pages/subPaginas/norte.html">Norte</a></li>
-                                        <li><a class="dropdown-item" href="pages/subPaginas/centro.html">Centro</a></li>
-                                        <li><a class="dropdown-item" href="pages/subPaginas/sur.html">Sur</a></li>
-                                    </ul>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="pages/contacto.html"> Contacto</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </nav>
-            </div>
-        </header>
-
-        <!-- MAIN  -->
-        <main>
-            <div class="container-fluid contenidoMain">
-                <div class="row">
-                    <div class="col-12 text-center contenido">
-                        <a href="pages/experiencias.html">
-                            <h1>LA <span>EXPERIENCIA </span> DE TU VIDA </h1>
-                        </a>
-                    </div>
-                    <div class="col-12 text-center contenido">
-                        <a href="pages/experiencias.html">
-                            <h2>- entrar -</h2>
-                        </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-1"
+                        aria-controls="navbar-1" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbar-1">
+                        <ul class="navbar-nav me-2 mb-2 mb-lg-1">
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="pages/quienesSomos.html"> Quiénes
+                                    Somos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="pages/experiencias.html"> Experiencias</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="" id="navbarDropdown" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false"> Recorrido
+                                    Virtual</a>
+                                <ul class="dropdown-menu bg-dark" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="pages/recorridoVirtual.html">Recorrido
+                                            Virtual</a>
+                                    </li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="pages/subPaginas/bangkok.html">Bangkok</a>
+                                    </li>
+                                    <li><a class="dropdown-item" href="pages/subPaginas/norte.html">Norte</a></li>
+                                    <li><a class="dropdown-item" href="pages/subPaginas/centro.html">Centro</a></li>
+                                    <li><a class="dropdown-item" href="pages/subPaginas/sur.html">Sur</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="pages/contacto.html"> Contacto</a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
-            </div>
-        </main>
+            </nav>
+        </div>
+    </header>
 
-        <!-- FOOTER  -->
+    <!-- MAIN  -->
+    <main>
+        <div class="contenidoMain">
+            <a href="pages/experiencias.html">
+                <h1> THE <span>THAILAND </span> <span>EXPERIENCE </span> </h1>
+                <p> - entrar -</p>
+            </a>
+        </div>
+    </main>
 
-        <footer class="container-fluid ">
-            <div class="row">
-                <div class=" col-12 redes d-flex justify-content-center">
-                    <img src="images/instagram.png" alt="logo instagram">
-                    <img src="images/facebook.png" alt="logo facebook">
-                    <img src="images/tik-tok.png" alt="logo tik tok">
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-12 text-center textoFooter">
-                    <h3>Todos los Derechos Reservados<h3>
-                            <h3>by @rdesign</h3>
-                </div>
-            </div>
-        </footer>
-    </div>
+    <!-- FOOTER  -->
+
+    <footer>
+        <div class="redes">
+            <img src="images/instagram.png" alt="logo instagram">
+            <img src="images/facebook.png" alt="logo facebook">
+            <img src="images/tik-tok.png" alt="logo tik tok">
+        </div>
+        <div class="textoFooter">
+            <p>Todos los Derechos Reservados <span>by @rdesign</span> </p>
+        </div>
+    </footer>
+
+
     <!--ENLACE JS  -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>
+
 </body>
 
 </html>

@@ -1,0 +1,36 @@
+
+/* ESTILOS Quienes Somos */
+#bodyQuienes {
+    background-image: url("../images/caratulaQuienes.jpg");
+    background-position: top;
+    background-size: cover;
+    height: auto;
+}
+
+.mainSomos {
+    margin-top: 8rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    background-color: rgba(227, 147, 28, 0.3);
+    text-align: center;
+    h1{
+        @include h1mobile;
+    }
+    p{
+        margin-top: 1rem;
+        font-size: 1.2rem;
+    }
+}
+
+@media only screen and (min-width:768px) {
+    .mainSomos {
+        margin-top: 10rem;
+        h1{
+            @include h1desktop;
+        }
+        p{
+            margin-top: 2rem;
+            font-size: 1.7rem;
+        }
+    }
+}

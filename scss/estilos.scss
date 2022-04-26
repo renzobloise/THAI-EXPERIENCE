@@ -1,123 +1,13 @@
-// IMPORTO LAS VARIABLES 
+// IMPORTO LOS PARTIALS
+
 @import "utilities/variables";
+@import "utilities/mixins";
+@import "utilities/mapas";
+@import "base/reset";
+@import "layouts/header";
+@import "layouts/footer";
+@import "views/index";
+@import "views/quienesSomos";
+@import "views/experiencias";
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: $fuente-principal;
-    font-family: $fuente-secundaria;
-    color: $color-texto-principal;
 
-}
-
-// ESTILOS DEL INDEX MOBILE 
-
-.bodyIndex {
-    background-image: url("../images/fondoIndex.jpg");
-    background-position: top;
-    background-size: cover;
-    height: auto;
-}
-
-// HEADER 
-header {
-    .imgLogo {
-        width: 5rem;
-    }
-
-    .nav-item {
-        a {
-            margin: 1rem;
-            color: solid white;
-            font-size: 1rem;
-        }
-    }
-
-    .navbar-nav {
-        text-decoration: none;
-        color: solid white;
-        font-weight: bold;
-        font-size: 1rem;
-    }
-
-    .dropdown-item {
-        color: white;
-    }
-
-}
-
-// MAIN 
-main {
-    margin-top: $margen-top-primario;
-
-    h1 {
-        font-size: $tamaño-h1-mobile;
-        font-weight: $negrita-h1;
-    }
-
-    span {
-        display: block;
-    }
-    
-    .contenidoMain {
-        width: auto;
-        transition: .5s ease-in-out;
-        text-decoration: none;
-        background-color: $color-con-transparencia-principal;
-        margin: 1rem;
-
-        a {
-            text-decoration: none;
-        }
-
-        &:hover {
-            transform: scale(1.1);
-        }
-    }
-
-}
-
-// FOOTER 
-
-footer {
-    margin-top: 10rem;
-    padding-top: 0.5rem;
-    height: auto;
-    h3 {
-        font-size: 0.8rem;
-        margin-top: 0.5rem;
-    }
-    .redes {
-        img {
-            width: 2rem;
-            margin: 0.8rem;
-        }
-    }
-}
-
-// ESTILOS PANTALLA DESKTOP 
-@media only screen and (min-width:768px) {
-    main {
-        h1 {
-            font-size: $tamaño-h1-principal;
-            font-weight: $negrita-h1;
-        }
-        .contenidoMain {
-            margin: 5rem;
-        }
-    }
-
-    // FOOTER 
-    footer {
-        .redes {
-            img {
-                width: 2.5rem;
-                margin: 1rem;
-            }
-        }
-        h3 {
-            font-size: 1rem;
-        }
-    }
-}
