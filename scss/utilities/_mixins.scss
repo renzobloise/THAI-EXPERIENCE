@@ -1,11 +1,23 @@
 @mixin flex{
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
+}
+@mixin flexRow{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
 }
 @mixin h1mobile{
     text-align: center;
     font-size: $tamanio-h1-mobile;
+    font-weight: $negrita-h1;
+}
+@mixin h1tablet{
+    font-size: $tamanio-h1-tablet;
+    text-align: center;
     font-weight: $negrita-h1;
 }
 @mixin h1desktop{

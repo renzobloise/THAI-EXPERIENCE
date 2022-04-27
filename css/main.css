@@ -131,7 +131,7 @@ main {
   font-family: "Josefin Sans", sans-serif;
   font-family: "Roboto", sans-serif; }
 
-/* Estilos experiencias */
+/* Estilos experiencias MOBILE */
 #bodyExperiencias {
   background-color: #1b1f1e; }
 
@@ -149,24 +149,28 @@ main {
   .mainExperiencias .primerParrafo {
     display: flex;
     justify-content: flex-end;
-    padding: 1rem; }
+    padding: 1rem;
+    margin-right: 1.8rem; }
     .mainExperiencias .primerParrafo p {
-      font-size: 1.3rem;
+      padding: 1rem;
+      font-size: 1.1rem;
       background-color: rgba(27, 31, 30, 0.5);
-      width: 20rem;
+      width: 17rem;
       text-align: justify; }
 
 .experiencias {
   display: flex;
   flex-direction: column;
-  justify-content: space-between; }
+  justify-content: center;
+  align-items: center; }
   .experiencias .opciones {
     margin: 1rem;
     text-align: center; }
     .experiencias .opciones h2 {
       font-family: "Water Brush", cursive; }
     .experiencias .opciones .descripcion {
-      font-size: 1.3rem; }
+      font-size: 1.1rem;
+      margin: 1.5rem; }
       .experiencias .opciones .descripcion ul li {
         padding-top: 1rem;
         list-style: none; }
@@ -182,27 +186,170 @@ main {
         .experiencias .opciones .descripcion button:hover {
           transform: scale(1.1); }
 
-/* PANTALLA TABLET Y DESKTOP EXPERIENCIAS  */
+/*PANTALLA TABLET EXPERIENCIAS*/
 @media only screen and (min-width: 768px) {
+  .mainExperiencias h1 {
+    font-size: 4.7rem;
+    text-align: center;
+    font-weight: bold; }
+  .mainExperiencias .primerParrafo {
+    margin-right: 2rem; }
+    .mainExperiencias .primerParrafo p {
+      font-size: 1.5rem;
+      width: 25rem; }
+  .experiencias .opciones h2 {
+    font-size: 4rem; }
+  .experiencias .opciones .descripcion p {
+    font-size: 1.5rem; }
+  .experiencias .opciones .descripcion ul li {
+    font-size: 1.5rem; }
+  .experiencias .opciones .descripcion button {
+    padding: 0.5rem; }
+    .experiencias .opciones .descripcion button a {
+      font-size: 1.2rem; } }
+
+/* PANTALLA  DESKTOP EXPERIENCIAS  */
+@media only screen and (min-width: 992px) {
   .mainExperiencias h1 {
     font-size: 5rem;
     text-align: center;
     font-weight: bold; }
   .mainExperiencias .primerParrafo {
-    display: flex;
-    justify-content: flex-end;
-    margin-top: 4rem; }
+    margin-top: 4rem;
+    margin-right: 2rem; }
     .mainExperiencias .primerParrafo p {
-      padding-top: 1rem;
       font-size: 2.3rem;
       width: 40rem; }
   .experiencias .opciones h2 {
     font-size: 4.5rem; }
-  .experiencias .opciones .descripcion p {
-    font-size: 2rem; }
-  .experiencias .opciones .descripcion ul li {
-    font-size: 2rem; }
-  .experiencias .opciones .descripcion button {
-    padding: 0.5rem; }
+  .experiencias .opciones .descripcion {
+    margin: 3rem; }
+    .experiencias .opciones .descripcion p {
+      font-size: 1.7rem; }
+    .experiencias .opciones .descripcion ul li {
+      font-size: 1.7rem; }
     .experiencias .opciones .descripcion button a {
       font-size: 1.5rem; } }
+
+/* ESTILOS DE CONTACTO MOBILE  */
+#bodyContacto {
+  background-image: url("../images/fondoContacto.jpg");
+  background-position: right;
+  background-size: cover;
+  height: auto; }
+
+main .tituloContacto {
+  margin-top: -4rem; }
+  main .tituloContacto h1 {
+    text-align: center;
+    font-size: 3rem;
+    font-weight: bold; }
+
+main .cuerpoContacto {
+  margin: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  main .cuerpoContacto .parrafoContacto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(53, 34, 6, 0.3);
+    border-radius: 7%;
+    margin-bottom: 4rem; }
+    main .cuerpoContacto .parrafoContacto p {
+      margin-top: 2rem;
+      font-size: 1.1rem;
+      text-align: center;
+      padding-left: 1rem;
+      padding-right: 1rem; }
+    main .cuerpoContacto .parrafoContacto .iconos {
+      margin-top: 1.5rem; }
+      main .cuerpoContacto .parrafoContacto .iconos img {
+        width: 3rem;
+        margin: 1rem; }
+  main .cuerpoContacto .formulario {
+    background-color: rgba(53, 34, 6, 0.3);
+    padding: 1rem;
+    border-radius: 10%; }
+    main .cuerpoContacto .formulario legend {
+      text-align: center;
+      font-family: "Water Brush", cursive;
+      font-size: 3rem; }
+    main .cuerpoContacto .formulario input {
+      color: black; }
+    main .cuerpoContacto .formulario .campo {
+      font-size: 1rem;
+      margin: 1rem;
+      color: black;
+      display: flex;
+      justify-content: space-between; }
+      main .cuerpoContacto .formulario .campo #pais {
+        color: black; }
+      main .cuerpoContacto .formulario .campo .option {
+        color: black; }
+      main .cuerpoContacto .formulario .campo .campoComentarios {
+        display: block;
+        height: 15rem;
+        width: 22rem;
+        padding: -5rem;
+        resize: none;
+        overflow: auto; }
+    main .cuerpoContacto .formulario .botones {
+      display: flex;
+      justify-content: center; }
+      main .cuerpoContacto .formulario .botones input {
+        background-color: rgba(53, 34, 6, 0.3);
+        width: 8rem;
+        color: white; }
+
+/*ESTILOS DE CONTACTO TABLET*/
+@media only screen and (min-width: 768px) {
+  main .tituloContacto h1 {
+    font-size: 4.7rem;
+    text-align: center;
+    font-weight: bold; }
+  main .cuerpoContacto .parrafoContacto p {
+    font-size: 1.5rem; }
+  main .cuerpoContacto .parrafoContacto .iconos img {
+    width: 4.5rem;
+    padding-bottom: 2rem; }
+  main .cuerpoContacto .formulario {
+    width: 35rem; }
+    main .cuerpoContacto .formulario .campo {
+      text-align: center; }
+      main .cuerpoContacto .formulario .campo .campoComentarios {
+        display: block;
+        margin-left: 2rem;
+        height: 15rem;
+        width: 28rem;
+        padding: -5rem;
+        resize: none;
+        overflow: auto; } }
+
+/*ESTILOS DE CONTACTO DESKTOP*/
+@media only screen and (min-width: 992px) {
+  main .tituloContacto h1 {
+    font-size: 5rem;
+    text-align: center;
+    font-weight: bold; }
+  main .cuerpoContacto {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-left: 0rem;
+    margin-right: 1rem; }
+    main .cuerpoContacto .parrafoContacto {
+      margin-left: 1.5rem;
+      margin-top: -2rem;
+      width: 30rem; }
+      main .cuerpoContacto .parrafoContacto p {
+        font-size: 1.7rem; }
+      main .cuerpoContacto .parrafoContacto .iconos img {
+        width: 5rem;
+        padding-bottom: 2rem; }
+    main .cuerpoContacto .formulario {
+      width: auto;
+      margin-left: 3rem; } }

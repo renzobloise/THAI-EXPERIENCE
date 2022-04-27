@@ -1,14 +1,13 @@
-
-  //ESTILOS QUE VOY A EXTENDER EN EL H2 - Ver si después de la entrega del desafío los borro
-  %estilosH2{
+//ESTILOS QUE VOY A EXTENDER EN EL H2 - Ver si después de la entrega del desafío los borro
+%estilosH2 {
     padding-top: 2rem;
     font-size: 2.5rem;
-   font-family: $fuente-principal;
+    font-family: $fuente-principal;
     font-family: $fuente-secundaria;
 }
 
 
-/* Estilos experiencias */
+/* Estilos experiencias MOBILE */
 #bodyExperiencias {
     background-color: rgb(27, 31, 30);
 }
@@ -22,39 +21,42 @@
 
     h1 {
         padding-top: 5rem;
-       @include h1mobile;
+        @include h1mobile;
     }
 
     .primerParrafo {
         display: flex;
         justify-content: flex-end;
         padding: 1rem;
+        margin-right: 1.8rem;
 
         p {
-            font-size: 1.3rem;
+            padding: 1rem;
+            font-size: $tamanio-parrafo-mobile;
             background-color: rgba(27, 31, 30, 0.5);
-            width: 20rem;
+            width: 17rem;
             text-align: justify;
         }
     }
 }
 
 .experiencias {
-   @include flex;
+    @include flex;
 
     .opciones {
         margin: 1rem;
         text-align: center;
-        
-      
+
+
         h2 {
-           @extend %estilosH2;
-           font-family: $fuenteCursiva;
+            @extend %estilosH2;
+            font-family: $fuenteCursiva;
         }
 
         .descripcion {
             font-size: $tamanio-parrafo-mobile;
-           
+            margin: 1.5rem;
+
             ul {
                 li {
                     padding-top: 1rem;
@@ -67,11 +69,13 @@
                 border: map-get($map: $botonesDark, $key: border-dark);
                 padding: 0.3rem;
                 transition: .5s ease-in-out;
+
                 a {
                     font-size: 0.9rem;
                     text-decoration: none;
                     color: white;
                 }
+
                 &:hover {
                     transform: scale(1.1);
                 }
@@ -80,20 +84,63 @@
     }
 }
 
-/* PANTALLA TABLET Y DESKTOP EXPERIENCIAS  */
+/*PANTALLA TABLET EXPERIENCIAS*/
 @media only screen and (min-width:768px) {
+    .mainExperiencias {
+        h1 {
+            @include h1tablet;
+        }
+
+        .primerParrafo {
+            margin-right: 2rem;
+
+            p {
+                font-size: $tamanio-parrafo-tablet;
+                width: 25rem;
+            }
+        }
+    }
+
+    .experiencias {
+        .opciones {
+            h2 {
+                font-size: 4rem;
+            }
+
+            .descripcion {
+                p {
+                    font-size: $tamanio-parrafo-tablet;
+                }
+
+                ul {
+                    li {
+                        font-size: $tamanio-parrafo-tablet;
+                    }
+                }
+                button {
+                    padding: 0.5rem;
+
+                    a {
+                        font-size: 1.2rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* PANTALLA  DESKTOP EXPERIENCIAS  */
+@media only screen and (min-width:992px) {
     .mainExperiencias {
         h1 {
             @include h1desktop;
         }
 
         .primerParrafo {
-            display: flex;
-            justify-content: flex-end;
             margin-top: 4rem;
+            margin-right: 2rem;
 
             p {
-                padding-top: 1rem;
                 font-size: 2.3rem;
                 width: 40rem;
             }
@@ -101,22 +148,25 @@
     }
 
     .experiencias {
-        .opciones{
+        .opciones {
             h2 {
-              font-size: 4.5rem;
+                font-size: 4.5rem;
             }
-            .descripcion{
+
+            .descripcion {
+                margin: 3rem;
+
                 p {
                     font-size: $tamanio-parrafo-desktop;
                 }
-        
+
                 ul {
                     li {
                         font-size: $tamanio-parrafo-desktop;
                     }
                 }
+
                 button {
-                    padding: 0.5rem;
                     a {
                         font-size: 1.5rem;
                     }

@@ -1,0 +1,187 @@
+/* ESTILOS DE CONTACTO MOBILE  */
+#bodyContacto {
+    background-image: url("../images/fondoContacto.jpg");
+    background-position: right;
+    background-size: cover;
+    height: auto;
+}
+
+main {
+    .tituloContacto {
+        margin-top: -4rem;
+
+        h1 {
+            @include h1mobile;
+        }
+    }
+
+    .cuerpoContacto {
+        margin: 2rem;
+        @include flex;
+
+        .parrafoContacto {
+            @include flex;
+            background-color: rgba(53, 34, 6, 0.3);
+            border-radius: 7%;
+            margin-bottom: 4rem;
+
+            p {
+                margin-top: 2rem;
+                font-size: $tamanio-parrafo-mobile;
+                text-align: center;
+                padding-left: 1rem;
+                padding-right: 1rem;
+            }
+
+            .iconos {
+                margin-top: 1.5rem;
+
+                img {
+                    width: 3rem;
+                    margin: 1rem;
+                }
+            }
+        }
+
+        .formulario {
+            background-color: rgba(53, 34, 6, 0.3);
+            padding: 1rem;
+            border-radius: 10%;
+
+            legend {
+                text-align: center;
+                font-family: $fuenteCursiva;
+                font-size: 3rem;
+            }
+
+            input {
+                color: black;
+            }
+
+            .campo {
+                font-size: 1rem;
+                margin: 1rem;
+                color: black;
+                display: flex;
+                justify-content: space-between;
+
+                #pais {
+                    color: black;
+                }
+
+                .option {
+                    color: black;
+                }
+
+                .campoComentarios {
+                    display: block;
+                    height: 15rem;
+                    width: 22rem;
+                    padding: -5rem;
+                    resize: none;
+                    overflow: auto;
+                }
+            }
+
+            .botones {
+                display: flex;
+                justify-content: center;
+
+                input {
+                    background-color: rgba(53, 34, 6, 0.3);
+                    width: 8rem;
+                    color: white;
+                }
+            }
+        }
+
+    }
+}
+
+/*ESTILOS DE CONTACTO TABLET*/
+
+@media only screen and (min-width:768px) {
+    main {
+        .tituloContacto {
+            h1 {
+                @include h1tablet;
+            }
+        }
+
+        .cuerpoContacto {
+            .parrafoContacto {
+                p {
+                    font-size: $tamanio-parrafo-tablet;
+                }
+
+                .iconos {
+                    img {
+                        width: 4.5rem;
+                        padding-bottom: 2rem;
+                    }
+                }
+            }
+
+            .formulario {
+                width: 35rem;
+
+                .campo {
+                    text-align: center;
+
+                    .campoComentarios {
+                        display: block;
+                        margin-left: 2rem;
+                        height: 15rem;
+                        width: 28rem;
+                        padding: -5rem;
+                        resize: none;
+                        overflow: auto;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/*ESTILOS DE CONTACTO DESKTOP*/
+
+@media only screen and (min-width:992px) {
+    main {
+        .tituloContacto {
+            h1 {
+                @include h1desktop;
+            }
+        }
+
+        .cuerpoContacto {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            margin-left: 0rem;
+            margin-right: 1rem;
+
+            .parrafoContacto {
+                margin-left: 1.5rem;
+                margin-top: -2rem;
+                width: 30rem;
+
+                p {
+
+                    font-size: $tamanio-parrafo-desktop;
+                }
+
+                .iconos {
+                    img {
+                        width: 5rem;
+                        padding-bottom: 2rem;
+                    }
+                }
+            }
+
+            .formulario {
+                width: auto;
+                margin-left: 3rem;
+            }
+        }
+    }
+}
