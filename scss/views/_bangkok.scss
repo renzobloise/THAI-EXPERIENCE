@@ -1,0 +1,174 @@
+#bodyBangkok {
+
+    background: $fondoSubpaginas;
+}
+
+/*PANTALLA MOBILE*/
+.contenedorSubpagina {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 8.5rem auto;
+    grid-template-areas: "aside main "
+
+        "aside footer ";
+
+    main {
+        grid-area: main;
+
+        h1 {
+            @include h1mobile;
+        }
+
+        section {
+            display: flex;
+            flex-direction: column;
+            margin-top: 4rem;
+            align-items: center;
+            flex-wrap: nowrap;
+
+
+            h3 {
+                @include tituloCursivaMobile;
+                margin: 0.5rem;
+            }
+
+            article {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin: 2rem;
+
+                .image {
+                    img {
+                        border-radius: 10%;
+                        width: 17rem;
+                        height: auto;
+                    }
+                }
+
+                p {
+                    margin: 1rem;
+                    font-size: $tamanio-parrafo-mobile;
+                    text-align: justify;
+                }
+
+            }
+        }
+    }
+}
+
+/* PANTALLA  TABLET BANGKOK  */
+@media only screen and (min-width:768px) {
+    .contenedorSubpagina {
+
+        grid-template-columns: 0.5fr 5fr;
+
+        main {
+            h1 {
+                @include h1tablet;
+            }
+
+            section {
+
+                align-items: flex-end;
+                h3 {
+                    @include tituloCursivaTablet;
+                    margin-right: 2rem;
+                }
+                article {
+                    
+                    margin: 1rem;
+
+                    .image {
+                        margin-right: 1rem;
+
+                        img {
+                            border-radius: 20%;
+                            width: 25rem;
+                            height: auto;
+                        }
+                    }
+
+                    p {
+                        font-size: $tamanio-parrafo-tablet;
+                        text-align: justify;
+                    }
+
+                }
+            }
+            .khao{
+                align-items: flex-start;
+                margin-left: 2rem;
+            }
+
+        }
+    }
+}
+
+/* PANTALLA  DESKTOP BANGKOK  */
+@media only screen and (min-width:1024px) {
+    .contenedorSubpagina {
+
+
+        main {
+            h1 {
+                @include h1desktop;
+            }
+
+            section {
+
+                align-items: flex-end;
+
+
+                h3 {
+                    @include tituloCursivaDesktop;
+                    margin-right: 3rem;
+                }
+
+                article {
+                    display: flex;
+                    flex-direction: row;
+                    margin: 2rem;
+
+                    .image {
+                        margin-right: 2rem;
+
+                        img {
+                            border-radius: 30% 70% 70% 30% / 27% 27% 73% 73%;
+                            width: 27rem;
+                            height: auto;
+
+                        }
+                    }
+
+                    p {
+                        font-size: $tamanio-parrafo-desktop;
+                        text-align: justify;
+                    }
+
+                }
+            }
+
+            .khao {
+                align-items: flex-start;
+
+                h3 {
+                    margin-left: 3rem;
+                }
+
+                article {
+                    flex-direction: row-reverse;
+
+                    .image {
+                        margin-right: 0rem;
+                        margin-left: 2rem;
+                    }
+                }
+            }
+
+        }
+
+
+
+    }
+}

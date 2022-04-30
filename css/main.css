@@ -1,3 +1,11 @@
+@keyframes move-down {
+  0% {
+    top: 10%; }
+  50% {
+    top: 35%; }
+  100% {
+    top: 50%; } }
+
 * {
   margin: 0;
   padding: 0;
@@ -10,6 +18,8 @@
     font-family: "Josefin Sans", sans-serif;
     font-family: "Roboto", sans-serif;
     font-family: "Aclonica", sans-serif; }
+  * hr {
+    color: white; }
 
 header .imgLogo {
   width: 5rem; }
@@ -32,7 +42,8 @@ header .dropdown-item {
 footer {
   margin-top: 9rem;
   padding-top: 0.5rem;
-  height: auto; }
+  height: auto;
+  grid-area: footer; }
   footer .redes {
     display: flex;
     justify-content: center; }
@@ -58,6 +69,43 @@ footer {
   margin-top: 0rem;
   margin-bottom: 0rem;
   padding-top: 3rem; }
+
+/*ASIDE PANTALLA MOBILE*/
+aside {
+  grid-area: aside;
+  background-color: #121010;
+  display: flex;
+  flex-direction: column; }
+  aside h2 {
+    display: none; }
+  aside ul {
+    margin-left: 0;
+    margin-top: 10rem; }
+    aside ul li {
+      list-style: none;
+      padding-top: 2rem;
+      padding-left: 0;
+      margin-left: 0;
+      margin-right: 1rem; }
+      aside ul li a {
+        text-decoration: none;
+        color: white;
+        font-family: "Water Brush", cursive;
+        font-size: 1.5rem; }
+
+/*ASIDE PANTALLA TABLET Y DESKTOP*/
+@media only screen and (min-width: 768px) {
+  aside {
+    text-align: center; }
+    aside h2 {
+      display: block;
+      font-family: "Aclonica", sans-serif;
+      margin-top: 10rem; }
+    aside ul {
+      margin-top: 1rem; }
+      aside ul li a {
+        padding: 1rem;
+        font-size: 2rem; } }
 
 /*ESTILOS DEL INDEX MOBILE*/
 #bodyIndex {
@@ -179,21 +227,21 @@ main {
   .mainExperiencias .primerParrafo {
     margin-right: 2rem; }
     .mainExperiencias .primerParrafo p {
-      font-size: 1.5rem;
+      font-size: 1.3rem;
       width: 25rem; }
   .experiencias .opciones h2 {
     font-size: 4rem; }
   .experiencias .opciones .descripcion p {
-    font-size: 1.5rem; }
+    font-size: 1.3rem; }
   .experiencias .opciones .descripcion ul li {
-    font-size: 1.5rem; }
+    font-size: 1.3rem; }
   .experiencias .opciones .descripcion button {
     padding: 0.5rem; }
     .experiencias .opciones .descripcion button a {
       font-size: 1.2rem; } }
 
 /* PANTALLA  DESKTOP EXPERIENCIAS  */
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 1024px) {
   .mainExperiencias h1 {
     font-size: 5rem;
     text-align: center;
@@ -212,9 +260,9 @@ main {
   .experiencias .opciones .descripcion {
     margin: 3rem; }
     .experiencias .opciones .descripcion p {
-      font-size: 1.7rem; }
+      font-size: 1.5rem; }
     .experiencias .opciones .descripcion ul li {
-      font-size: 1.7rem; }
+      font-size: 1.5rem; }
     .experiencias .opciones .descripcion button a {
       font-size: 1.5rem; } }
 
@@ -332,21 +380,21 @@ main {
   .mainExperiencias .primerParrafo {
     margin-right: 2rem; }
     .mainExperiencias .primerParrafo p {
-      font-size: 1.5rem;
+      font-size: 1.3rem;
       width: 25rem; }
   .experiencias .opciones h2 {
     font-size: 4rem; }
   .experiencias .opciones .descripcion p {
-    font-size: 1.5rem; }
+    font-size: 1.3rem; }
   .experiencias .opciones .descripcion ul li {
-    font-size: 1.5rem; }
+    font-size: 1.3rem; }
   .experiencias .opciones .descripcion button {
     padding: 0.5rem; }
     .experiencias .opciones .descripcion button a {
       font-size: 1.2rem; } }
 
 /* PANTALLA  DESKTOP EXPERIENCIAS  */
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 1024px) {
   .mainExperiencias h1 {
     font-size: 5rem;
     text-align: center;
@@ -365,9 +413,9 @@ main {
   .experiencias .opciones .descripcion {
     margin: 3rem; }
     .experiencias .opciones .descripcion p {
-      font-size: 1.7rem; }
+      font-size: 1.5rem; }
     .experiencias .opciones .descripcion ul li {
-      font-size: 1.7rem; }
+      font-size: 1.5rem; }
     .experiencias .opciones .descripcion button a {
       font-size: 1.5rem; } }
 
@@ -458,7 +506,7 @@ main .cuerpoContacto {
     font-family: "Roboto", sans-serif;
     font-family: "Aclonica", sans-serif; }
   main .cuerpoContacto .parrafoContacto p {
-    font-size: 1.5rem; }
+    font-size: 1.3rem; }
   main .cuerpoContacto .parrafoContacto .iconos img {
     width: 4.5rem;
     padding-bottom: 2rem; }
@@ -495,7 +543,7 @@ main .cuerpoContacto {
       margin-top: -2rem;
       width: 30rem; }
       main .cuerpoContacto .parrafoContacto p {
-        font-size: 1.7rem; }
+        font-size: 1.5rem; }
       main .cuerpoContacto .parrafoContacto .iconos img {
         width: 5rem;
         padding-bottom: 2rem; }
@@ -509,74 +557,240 @@ main .cuerpoContacto {
   background-size: cover;
   height: auto; }
 
+/* PANTALLA  Mobile Recorrido Virtual  */
+main h1 {
+  text-align: center;
+  font-size: 3rem;
+  font-weight: bold;
+  font-family: "Josefin Sans", sans-serif;
+  font-family: "Roboto", sans-serif;
+  font-family: "Aclonica", sans-serif;
+  margin-bottom: 2rem; }
+
+main .container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-auto-rows: 8rem 14rem 8rem 14rem;
+  grid-gap: 1rem; }
+  main .container .galleryContainer .galleryItem {
+    width: 100%;
+    height: 100%;
+    position: relative; }
+    main .container .galleryContainer .galleryItem .image {
+      width: 100%;
+      height: 100%;
+      overflow: hidden; }
+      main .container .galleryContainer .galleryItem .image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: 50% 50%;
+        cursor: pointer;
+        transition: .5s ease-in-out; }
+        main .container .galleryContainer .galleryItem .image img:hover {
+          transform: scale(1.2); }
+    main .container .galleryContainer .galleryItem .text {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: #fff;
+      pointer-events: none;
+      text-align: center;
+      font-size: 2.2rem;
+      font-family: "Water Brush", cursive;
+      cursor: pointer;
+      z-index: 4;
+      background-color: rgba(27, 31, 30, 0.3);
+      padding-left: 1rem;
+      padding-right: 1rem; }
+  main .container .gastronomia {
+    grid-column: span 2; }
+  main .container .bangkok {
+    grid-column: span 5;
+    grid-row: span 2; }
+  main .container .norte {
+    grid-column: span 3; }
+  main .container .centro {
+    grid-column: span 3;
+    grid-row: span 2; }
+  main .container .sur {
+    grid-column: span 5; }
+  main .container .cultura {
+    grid-column: span 2; }
+  main .container .tips {
+    grid-column: span 2; }
+
+/* PANTALLA  TABLET Recorrido Virtual  */
+@media only screen and (min-width: 768px) {
+  main h1 {
+    font-size: 4.7rem;
+    text-align: center;
+    font-weight: bold;
+    font-family: "Josefin Sans", sans-serif;
+    font-family: "Roboto", sans-serif;
+    font-family: "Aclonica", sans-serif; }
+  main .container .galleryContainer .galleryItem .text {
+    font-size: 2.7rem; } }
+
 /* PANTALLA  DESKTOP Recorrido Virtual  */
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 1024px) {
   main h1 {
     font-size: 5rem;
     text-align: center;
     font-weight: bold;
     font-family: "Josefin Sans", sans-serif;
     font-family: "Roboto", sans-serif;
-    font-family: "Aclonica", sans-serif;
-    margin-bottom: 2rem; }
+    font-family: "Aclonica", sans-serif; }
   main .container {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     grid-auto-rows: 12rem 18rem 12rem 18rem;
     grid-gap: 1rem; }
-    main .container .galleryContainer .galleryItem {
-      width: 100%;
-      height: 100%;
-      position: relative; }
-      main .container .galleryContainer .galleryItem .image {
-        width: 100%;
-        height: 100%;
-        overflow: hidden; }
-        main .container .galleryContainer .galleryItem .image img {
-          width: 100%;
-          height: 100%;
-          object-fit: cover;
-          object-position: 50% 50%;
-          cursor: pointer;
-          transition: .5s ease-in-out; }
-          main .container .galleryContainer .galleryItem .image img:hover {
-            transform: scale(1.2); }
-      main .container .galleryContainer .galleryItem .text {
-        opacity: 0;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        color: #fff;
-        pointer-events: none;
-        text-align: center;
-        font-size: 3rem;
-        font-family: "Water Brush", cursive;
-        cursor: pointer;
-        z-index: 4;
-        transition: .3s ease-in-out;
-        background-color: rgba(27, 31, 30, 0.3); }
-      main .container .galleryContainer .galleryItem:hover .text {
-        opacity: 1;
-        animation: move-down .3s linear;
-        width: 100%; }
+    main .container .galleryContainer .galleryItem .text {
+      opacity: 0;
+      font-size: 3rem;
+      font-family: "Water Brush", cursive;
+      transition: .3s ease-in-out; }
+    main .container .galleryContainer .galleryItem:hover .text {
+      opacity: 1;
+      animation: move-down .3s linear;
+      width: 100%; }
     main .container .gastronomia {
       grid-column: span 2;
       grid-row: span 2; }
     main .container .bangkok {
       grid-column: span 3;
       grid-row: span 2; }
+    main .container .cultura {
+      grid-column: span 1; }
+    main .container .tips {
+      grid-column: span 1; }
     main .container .norte {
       grid-column: span 4; }
     main .container .centro {
       grid-column: span 2;
       grid-row: span 2; }
     main .container .sur {
-      grid-column: span 4; }
-  @keyframes move-down {
-    0% {
-      top: 10%; }
-    50% {
-      top: 35%; }
-    100% {
-      top: 50%; } } }
+      grid-column: span 4; } }
+
+#bodyBangkok {
+  background: linear-gradient(90deg, black 48%, #390701 94%); }
+
+/*PANTALLA MOBILE*/
+.contenedorSubpagina {
+  display: grid;
+  height: 100vh;
+  grid-template-columns: 8.5rem auto;
+  grid-template-areas: "aside main "  "aside footer "; }
+  .contenedorSubpagina main {
+    grid-area: main; }
+    .contenedorSubpagina main h1 {
+      text-align: center;
+      font-size: 3rem;
+      font-weight: bold;
+      font-family: "Josefin Sans", sans-serif;
+      font-family: "Roboto", sans-serif;
+      font-family: "Aclonica", sans-serif; }
+    .contenedorSubpagina main section {
+      display: flex;
+      flex-direction: column;
+      margin-top: 4rem;
+      align-items: center;
+      flex-wrap: nowrap; }
+      .contenedorSubpagina main section h3 {
+        font-family: "Josefin Sans", sans-serif;
+        font-family: "Roboto", sans-serif;
+        font-family: "Water Brush", cursive;
+        text-align: center;
+        font-size: 2rem;
+        margin: 0.5rem; }
+      .contenedorSubpagina main section article {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 2rem; }
+        .contenedorSubpagina main section article .image img {
+          border-radius: 10%;
+          width: 17rem;
+          height: auto; }
+        .contenedorSubpagina main section article p {
+          margin: 1rem;
+          font-size: 1.1rem;
+          text-align: justify; }
+
+/* PANTALLA  TABLET BANGKOK  */
+@media only screen and (min-width: 768px) {
+  .contenedorSubpagina {
+    grid-template-columns: 0.5fr 5fr; }
+    .contenedorSubpagina main h1 {
+      font-size: 4.7rem;
+      text-align: center;
+      font-weight: bold;
+      font-family: "Josefin Sans", sans-serif;
+      font-family: "Roboto", sans-serif;
+      font-family: "Aclonica", sans-serif; }
+    .contenedorSubpagina main section {
+      align-items: flex-end; }
+      .contenedorSubpagina main section h3 {
+        font-family: "Josefin Sans", sans-serif;
+        font-family: "Roboto", sans-serif;
+        font-family: "Water Brush", cursive;
+        text-align: center;
+        font-size: 3rem;
+        margin-right: 2rem; }
+      .contenedorSubpagina main section article {
+        margin: 1rem; }
+        .contenedorSubpagina main section article .image {
+          margin-right: 1rem; }
+          .contenedorSubpagina main section article .image img {
+            border-radius: 20%;
+            width: 25rem;
+            height: auto; }
+        .contenedorSubpagina main section article p {
+          font-size: 1.3rem;
+          text-align: justify; }
+    .contenedorSubpagina main .khao {
+      align-items: flex-start;
+      margin-left: 2rem; } }
+
+/* PANTALLA  DESKTOP BANGKOK  */
+@media only screen and (min-width: 1024px) {
+  .contenedorSubpagina main h1 {
+    font-size: 5rem;
+    text-align: center;
+    font-weight: bold;
+    font-family: "Josefin Sans", sans-serif;
+    font-family: "Roboto", sans-serif;
+    font-family: "Aclonica", sans-serif; }
+  .contenedorSubpagina main section {
+    align-items: flex-end; }
+    .contenedorSubpagina main section h3 {
+      font-family: "Josefin Sans", sans-serif;
+      font-family: "Roboto", sans-serif;
+      font-family: "Water Brush", cursive;
+      text-align: center;
+      font-size: 4rem;
+      margin-right: 3rem; }
+    .contenedorSubpagina main section article {
+      display: flex;
+      flex-direction: row;
+      margin: 2rem; }
+      .contenedorSubpagina main section article .image {
+        margin-right: 2rem; }
+        .contenedorSubpagina main section article .image img {
+          border-radius: 30% 70% 70% 30% / 27% 27% 73% 73%;
+          width: 27rem;
+          height: auto; }
+      .contenedorSubpagina main section article p {
+        font-size: 1.5rem;
+        text-align: justify; }
+  .contenedorSubpagina main .khao {
+    align-items: flex-start; }
+    .contenedorSubpagina main .khao h3 {
+      margin-left: 3rem; }
+    .contenedorSubpagina main .khao article {
+      flex-direction: row-reverse; }
+      .contenedorSubpagina main .khao article .image {
+        margin-right: 0rem;
+        margin-left: 2rem; } }

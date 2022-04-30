@@ -34,3 +34,25 @@
     font-family: $fuente-secundaria;
     font-family: $fuente-principal;
 }
+@mixin tituloCursivaDesktop{
+    font-family: $fuente-terciaria;
+    font-family: $fuente-secundaria;
+    font-family: $fuenteCursiva;
+    text-align: center;
+    font-size: 4rem;
+}
+
+@mixin tituloCursivaTablet{
+    font-family: $fuente-terciaria;
+    font-family: $fuente-secundaria;
+    font-family: $fuenteCursiva;
+    text-align: center;
+    font-size: 3rem;
+}
+@mixin tituloCursivaMobile{
+    font-family: $fuente-terciaria;
+    font-family: $fuente-secundaria;
+    font-family: $fuenteCursiva;
+    text-align: center;
+    font-size: 2rem;
+}

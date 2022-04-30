@@ -130,7 +130,7 @@
 }
 
 /* PANTALLA  DESKTOP EXPERIENCIAS  */
-@media only screen and (min-width:992px) {
+@media only screen and (min-width:1024px) {
     .mainExperiencias {
         h1 {
             @include h1desktop;
