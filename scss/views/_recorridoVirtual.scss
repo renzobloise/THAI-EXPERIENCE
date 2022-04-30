@@ -1,0 +1,121 @@
+#bodyRecorrido {
+    background-image: url(../images/fondoRecorrido.jpg);
+    background-position: top;
+    background-size: cover;
+    height: auto;
+}
+
+/* PANTALLA  DESKTOP Recorrido Virtual  */
+@media only screen and (min-width:992px) {
+   main{
+       h1{
+           @include h1desktop;
+           margin-bottom: 2rem;
+       }
+       .container {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-auto-rows: 12rem 18rem 12rem 18rem;
+        grid-gap: 1rem;
+
+        .galleryContainer {
+            .galleryItem {
+                width: 100%;
+                height: 100%;
+                position: relative;
+
+
+                .image {
+                    width: 100%;
+                    height: 100%;
+                    overflow: hidden;
+
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                        object-position: 50% 50%;
+                        cursor: pointer;
+                        transition: .5s ease-in-out;
+
+                        &:hover {
+                            transform: scale(1.2);
+                        }
+                    }
+
+
+                }
+
+                .text {
+
+                    opacity: 0;
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    color: #fff;
+                    pointer-events: none;
+                    text-align: center;
+                    font-size: 3rem;
+                    font-family: $fuenteCursiva;
+                    cursor: pointer;
+                    z-index: 4;
+                    transition: .3s ease-in-out;
+                    background-color: rgba(27, 31, 30, 0.3);
+                }
+
+                &:hover {
+                    .text {
+                        opacity: 1;
+                        animation: move-down .3s linear;
+                        width: 100%;
+                    }
+
+                }
+            }
+
+        }
+
+        .gastronomia {
+            grid-column: span 2;
+            grid-row: span 2;
+        }
+
+        .bangkok {
+            grid-column: span 3;
+            grid-row: span 2;
+        }
+
+        .norte {
+            grid-column: span 4;
+
+        }
+
+        .centro {
+            grid-column: span 2;
+            grid-row: span 2;
+        }
+
+        .sur {
+            grid-column: span 4;
+        }
+
+    }
+
+
+    @keyframes move-down {
+        0% {
+            top: 10%;
+        }
+
+        50% {
+            top: 35%;
+        }
+
+        100% {
+            top: 50%;
+        }
+    }
+   }
+     
+}

@@ -14,14 +14,23 @@
     text-align: center;
     font-size: $tamanio-h1-mobile;
     font-weight: $negrita-h1;
+    font-family: $fuente-terciaria;
+    font-family: $fuente-secundaria;
+    font-family: $fuente-principal;
 }
 @mixin h1tablet{
     font-size: $tamanio-h1-tablet;
     text-align: center;
     font-weight: $negrita-h1;
+    font-family: $fuente-terciaria;
+    font-family: $fuente-secundaria;
+    font-family: $fuente-principal;
 }
 @mixin h1desktop{
     font-size: $tamanio-h1-principal;
     text-align: center;
     font-weight: $negrita-h1;
+    font-family: $fuente-terciaria;
+    font-family: $fuente-secundaria;
+    font-family: $fuente-principal;
 }
