@@ -77,6 +77,10 @@ footer {
   flex-direction: row; }
   #asideUno h2 {
     display: none; }
+    #asideUno h2 a {
+      text-decoration: none;
+      font-family: "Aclonica", sans-serif;
+      color: white; }
   #asideUno ul {
     margin-left: 0rem;
     margin-top: 6rem;
@@ -309,41 +313,118 @@ main {
 
 /* ESTILOS Quienes Somos */
 #bodyQuienes {
+  background-color: #1b1f1e;
+  height: auto; }
+
+.mainSomos .cuerpoQuienes {
   background-image: url("../images/caratulaQuienes.jpg");
   background-position: top;
   background-size: cover;
-  height: auto; }
-
-.mainSomos {
-  margin-top: 8rem;
-  margin-left: 2rem;
-  margin-right: 2rem;
-  background-color: rgba(227, 147, 28, 0.3);
-  text-align: center; }
-  .mainSomos h1 {
+  text-align: center;
+  margin-top: -12rem; }
+  .mainSomos .cuerpoQuienes h1 {
+    padding-top: 8rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
     text-align: center;
     font-size: 3.5rem;
     font-weight: bold;
     font-family: "Josefin Sans", sans-serif;
     font-family: "Roboto", sans-serif;
     font-family: "Aclonica", sans-serif; }
-  .mainSomos p {
-    margin-top: 1rem;
-    font-size: 1.2rem; }
+  .mainSomos .cuerpoQuienes .textoQuienes {
+    padding-bottom: 5rem; }
+    .mainSomos .cuerpoQuienes .textoQuienes p {
+      background-color: rgba(183, 123, 21, 0.4);
+      margin-top: 1rem;
+      font-size: 1rem;
+      margin-left: 1.5rem;
+      margin-right: 1.5rem;
+      padding: 1rem;
+      font-family: "Aclonica", sans-serif; }
+
+.mainSomos .nosotros h2 {
+  padding-top: 4rem;
+  font-family: "Josefin Sans", sans-serif;
+  font-family: "Roboto", sans-serif;
+  font-family: "Water Brush", cursive;
+  text-align: center;
+  font-size: 2.5rem;
+  font-size: 4rem; }
+
+.mainSomos .nosotros .cuerpoNosotros {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem;
+  margin-bottom: -8rem; }
+  .mainSomos .nosotros .cuerpoNosotros p {
+    text-align: justify;
+    font-size: 1rem;
+    padding: 1rem;
+    font-family: "Aclonica", sans-serif; }
+  .mainSomos .nosotros .cuerpoNosotros img {
+    width: 25rem;
+    border-radius: 20%; }
 
 @media only screen and (min-width: 768px) {
-  .mainSomos {
-    margin-top: 10rem; }
-    .mainSomos h1 {
-      font-size: 5rem;
-      text-align: center;
-      font-weight: bold;
-      font-family: "Josefin Sans", sans-serif;
-      font-family: "Roboto", sans-serif;
-      font-family: "Aclonica", sans-serif; }
-    .mainSomos p {
-      margin-top: 2rem;
-      font-size: 1.7rem; } }
+  .mainSomos .cuerpoQuienes h1 {
+    padding-top: 10rem;
+    font-size: 4.7rem;
+    text-align: center;
+    font-weight: bold;
+    font-family: "Josefin Sans", sans-serif;
+    font-family: "Roboto", sans-serif;
+    font-family: "Aclonica", sans-serif; }
+  .mainSomos .cuerpoQuienes .textoQuienes {
+    padding-bottom: 5rem; }
+    .mainSomos .cuerpoQuienes .textoQuienes p {
+      font-size: 1.5rem;
+      padding: 1.5rem; }
+  .mainSomos .nosotros h2 {
+    font-family: "Josefin Sans", sans-serif;
+    font-family: "Roboto", sans-serif;
+    font-family: "Water Brush", cursive;
+    text-align: center;
+    font-size: 3rem;
+    font-size: 5rem; }
+  .mainSomos .nosotros .cuerpoNosotros p {
+    font-size: 1.3rem; }
+  .mainSomos .nosotros .cuerpoNosotros img {
+    width: 35rem;
+    border-radius: 20%; } }
+
+@media only screen and (min-width: 1024px) {
+  .mainSomos .cuerpoQuienes h1 {
+    padding-top: 13rem;
+    font-size: 5rem;
+    text-align: center;
+    font-weight: bold;
+    font-family: "Josefin Sans", sans-serif;
+    font-family: "Roboto", sans-serif;
+    font-family: "Aclonica", sans-serif; }
+  .mainSomos .cuerpoQuienes .textoQuienes p {
+    font-size: 1.7rem;
+    padding: 2rem; }
+  .mainSomos .nosotros h2 {
+    font-family: "Josefin Sans", sans-serif;
+    font-family: "Roboto", sans-serif;
+    font-family: "Water Brush", cursive;
+    text-align: center;
+    font-size: 4rem;
+    font-size: 6.5rem; }
+  .mainSomos .nosotros .cuerpoNosotros {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center; }
+    .mainSomos .nosotros .cuerpoNosotros p {
+      font-size: 1.3rem;
+      padding-right: 3rem; }
+    .mainSomos .nosotros .cuerpoNosotros img {
+      width: 35rem;
+      border-radius: 72% 0% 68% 10% / 61% 10% 54% 10%; } }
 
 .experiencias .opciones h2 {
   padding-top: 2rem;
@@ -717,8 +798,27 @@ main .container {
     main .container .sur {
       grid-column: span 4; } }
 
+/*ESTILOS PARA LAS SUBPAGINAS DE RECORRIDO VIRTUAL*/
 #bodyBangkok {
-  background: linear-gradient(90deg, black 48%, #390701 94%); }
+  background: linear-gradient(90deg, #b5abaa 60%, #ac1904 100%); }
+
+#bodySur {
+  background: linear-gradient(90deg, #aab5b5 60%, #20c4c8 100%); }
+
+#bodyNorte {
+  background: linear-gradient(90deg, #b5afaa 60%, #a2470f 100%); }
+
+#bodyCentro {
+  background: linear-gradient(90deg, #b5afaa 60%, #063e0c 100%); }
+
+#bodyGastronomia {
+  background: linear-gradient(90deg, #b5afaa 60%, #ed5a22 100%); }
+
+#bodyCultura {
+  background: linear-gradient(90deg, #b5afaa 60%, #602a79 100%); }
+
+#bodyTips {
+  background: linear-gradient(90deg, #b5afaa 60%, #1a15bf 100%); }
 
 /*PANTALLA MOBILE*/
 .contenedorSubpagina {
@@ -735,6 +835,10 @@ main .container {
       font-family: "Roboto", sans-serif;
       font-family: "Aclonica", sans-serif;
       margin-top: -8rem; }
+    .contenedorSubpagina main h2 {
+      text-align: center;
+      font-family: "Aclonica", sans-serif;
+      font-size: 1.7rem; }
     .contenedorSubpagina main section {
       display: flex;
       flex-direction: column;
@@ -761,6 +865,8 @@ main .container {
           margin: 1rem;
           font-size: 1.1rem;
           text-align: justify; }
+        .contenedorSubpagina main section article .textoVestimenta {
+          font-size: 1.1rem; }
 
 /* PANTALLA  TABLET BANGKOK  */
 @media only screen and (min-width: 768px) {
@@ -768,12 +874,15 @@ main .container {
     grid-template-columns: 0.5fr 5fr;
     grid-template-areas: "asideUno main" "asideDos main" "asideDos footer"; }
     .contenedorSubpagina main h1 {
+      margin-top: 2rem;
       font-size: 4.7rem;
       text-align: center;
       font-weight: bold;
       font-family: "Josefin Sans", sans-serif;
       font-family: "Roboto", sans-serif;
       font-family: "Aclonica", sans-serif; }
+    .contenedorSubpagina main h2 {
+      font-size: 2.5rem; }
     .contenedorSubpagina main section {
       align-items: flex-end; }
       .contenedorSubpagina main section h3 {
@@ -794,12 +903,14 @@ main .container {
         .contenedorSubpagina main section article p {
           font-size: 1.3rem;
           text-align: justify; }
-    .contenedorSubpagina main .khao {
+        .contenedorSubpagina main section article .textoVestimenta {
+          font-size: 1.3rem; }
+    .contenedorSubpagina main .sectionDos {
       align-items: flex-start;
       margin-left: 2rem; } }
 
 /* PANTALLA  DESKTOP BANGKOK  */
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 1200px) {
   .contenedorSubpagina main h1 {
     font-size: 5rem;
     text-align: center;
@@ -823,18 +934,19 @@ main .container {
       .contenedorSubpagina main section article .image {
         margin-right: 2rem; }
         .contenedorSubpagina main section article .image img {
-          border-radius: 30% 70% 70% 30% / 27% 27% 73% 73%;
           width: 27rem;
           height: auto; }
       .contenedorSubpagina main section article p {
         font-size: 1.5rem;
         text-align: justify; }
-  .contenedorSubpagina main .khao {
+      .contenedorSubpagina main section article .textoVestimenta {
+        font-size: 1.5rem; }
+  .contenedorSubpagina main .sectionDos {
     align-items: flex-start; }
-    .contenedorSubpagina main .khao h3 {
+    .contenedorSubpagina main .sectionDos h3 {
       margin-left: 3rem; }
-    .contenedorSubpagina main .khao article {
+    .contenedorSubpagina main .sectionDos article {
       flex-direction: row-reverse; }
-      .contenedorSubpagina main .khao article .image {
+      .contenedorSubpagina main .sectionDos article .image {
         margin-right: 0rem;
         margin-left: 2rem; } }

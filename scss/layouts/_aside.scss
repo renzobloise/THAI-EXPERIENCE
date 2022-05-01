@@ -9,6 +9,11 @@
 
     h2 {
         display: none;
+        a{
+            text-decoration: none;
+            font-family: $fuente-principal;
+            color: white;
+        }
     }
 
     ul {
@@ -82,6 +87,7 @@
             display: block;
             font-family: $fuente-principal;
             margin-top: 10rem;
+            
         }
 
         ul {

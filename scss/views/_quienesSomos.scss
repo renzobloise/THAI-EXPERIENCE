@@ -1,36 +1,162 @@
 @import "experiencias";
+
 /* ESTILOS Quienes Somos */
 #bodyQuienes {
-    background-image: url("../images/caratulaQuienes.jpg");
-    background-position: top;
-    background-size: cover;
+    background-color: rgb(27, 31, 30);
     height: auto;
 }
 
 .mainSomos {
-    margin-top: 8rem;
-    margin-left: 2rem;
-    margin-right: 2rem;
-    background-color: rgba(227, 147, 28, 0.3);
-    text-align: center;
-    h1{
-        @include h1mobile;
+
+    .cuerpoQuienes {
+        background-image: url("../images/caratulaQuienes.jpg");
+        background-position: top;
+        background-size: cover;
+        text-align: center;
+        margin-top: -12rem;
+
+
+        h1 {
+            padding-top: 8rem;
+            padding-left: 2rem;
+            padding-right: 2rem;
+
+            @include h1mobile;
+        }
+
+        .textoQuienes {
+            padding-bottom: 5rem;
+
+            p {
+                background-color: rgba(183, 123, 21, 0.4);
+                margin-top: 1rem;
+                font-size: 1rem;
+                margin-left: 1.5rem;
+                margin-right: 1.5rem;
+                padding: 1rem;
+                font-family: $fuente-principal;
+            }
+        }
     }
-    p{
-        margin-top: 1rem;
-        font-size: 1.2rem;
+
+    .nosotros {
+
+        h2 {
+
+            padding-top: 4rem;
+            @include tituloCursivaMobile;
+            font-size: 4rem;
+        }
+
+        .cuerpoNosotros {
+            @include flex;
+            margin: 1rem;
+            margin-bottom: -8rem;
+
+            p {
+                text-align: justify;
+                font-size: 1rem;
+                padding: 1rem;
+                font-family: $fuente-principal;
+            }
+
+
+            img {
+                width: 25rem;
+                border-radius: 20%;
+            }
+
+
+        }
+
     }
 }
 
 @media only screen and (min-width:768px) {
+
     .mainSomos {
-        margin-top: 10rem;
-        h1{
-            @include h1desktop;
+
+        .cuerpoQuienes {
+            h1 {
+                padding-top: 10rem;
+                @include h1tablet;
+            }
+
+            .textoQuienes {
+                padding-bottom: 5rem;
+                p {
+                    font-size: 1.5rem;
+                    padding: 1.5rem;
+                }
+            }
         }
-        p{
-            margin-top: 2rem;
-            font-size: 1.7rem;
+
+        .nosotros {
+
+            h2 {
+                @include tituloCursivaTablet;
+                font-size: 5rem;
+            }
+
+            .cuerpoNosotros {
+                p {
+                    font-size: 1.3rem;
+                }
+
+
+                img {
+                    width: 35rem;
+                    border-radius: 20%;
+                    
+                }
+
+
+            }
+
+        }
+    }
+}
+
+@media only screen and (min-width:1024px){
+    .mainSomos {
+
+        .cuerpoQuienes {
+            h1 {
+                padding-top: 13rem;
+                @include h1desktop;
+            }
+
+            .textoQuienes {
+                
+                p {
+                    font-size: 1.7rem;
+                    padding: 2rem;
+                }
+            }
+        }
+
+        .nosotros {
+
+            h2 {
+                @include tituloCursivaDesktop;
+                font-size: 6.5rem;
+            }
+
+            .cuerpoNosotros {
+                @include flexRow;
+                p {
+                    font-size: 1.3rem;
+                    padding-right: 3rem;
+                }
+                img {
+                    width: 35rem;
+                    border-radius: 72% 0% 68% 10% / 61% 10% 54% 10%;
+                    
+                }
+
+
+            }
+
         }
     }
 }
