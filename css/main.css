@@ -40,8 +40,7 @@ header .dropdown-item {
 
 /* FOOTER PANTALLA MOBILE*/
 footer {
-  margin-top: 9rem;
-  padding-top: 0.5rem;
+  padding-top: 16rem;
   height: auto;
   grid-area: footer; }
   footer .redes {
@@ -71,23 +70,48 @@ footer {
   padding-top: 3rem; }
 
 /*ASIDE PANTALLA MOBILE*/
-aside {
-  grid-area: aside;
+#asideUno {
+  grid-area: asideUno;
   background-color: #121010;
   display: flex;
-  flex-direction: column; }
-  aside h2 {
+  flex-direction: row; }
+  #asideUno h2 {
     display: none; }
-  aside ul {
-    margin-left: 0;
-    margin-top: 10rem; }
-    aside ul li {
+  #asideUno ul {
+    margin-left: 0rem;
+    margin-top: 6rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly; }
+    #asideUno ul li {
+      list-style: none;
+      padding-right: 3rem;
+      padding-top: 2rem; }
+      #asideUno ul li a {
+        text-decoration: none;
+        color: white;
+        font-family: "Water Brush", cursive;
+        font-size: 1.5rem; }
+
+#asideDos {
+  grid-area: asideDos;
+  background-color: #121010;
+  display: flex;
+  flex-direction: row; }
+  #asideDos h2 {
+    display: none; }
+  #asideDos ul {
+    margin-left: 0rem;
+    margin-top: -2rem;
+    display: flex;
+    flex-direction: row;
+    align-content: space-evenly; }
+    #asideDos ul li {
       list-style: none;
       padding-top: 2rem;
-      padding-left: 0;
-      margin-left: 0;
-      margin-right: 1rem; }
-      aside ul li a {
+      padding-left: 1.3rem;
+      padding-right: 1.7rem; }
+      #asideDos ul li a {
         text-decoration: none;
         color: white;
         font-family: "Water Brush", cursive;
@@ -95,23 +119,40 @@ aside {
 
 /*ASIDE PANTALLA TABLET Y DESKTOP*/
 @media only screen and (min-width: 768px) {
-  aside {
+  #asideUno {
+    flex-direction: column;
     text-align: center; }
-    aside h2 {
+    #asideUno h2 {
       display: block;
       font-family: "Aclonica", sans-serif;
       margin-top: 10rem; }
-    aside ul {
+    #asideUno ul {
+      flex-direction: column;
       margin-top: 1rem; }
-      aside ul li a {
-        padding: 1rem;
+      #asideUno ul li a {
+        padding: 1.1rem;
+        font-size: 2rem; }
+  #asideDos {
+    flex-direction: column;
+    text-align: center; }
+    #asideDos h2 {
+      display: block;
+      font-family: "Aclonica", sans-serif;
+      margin-top: 10rem; }
+    #asideDos ul {
+      flex-direction: column;
+      margin-top: 1rem; }
+      #asideDos ul li a {
+        padding: 1.1rem;
+        margin-left: -1rem;
         font-size: 2rem; } }
 
 /*ESTILOS DEL INDEX MOBILE*/
 #bodyIndex {
   background-image: url("../images/fondoIndex.jpg");
   background-position: top;
-  background-size: cover; }
+  background-size: cover;
+  background-repeat: no-repeat; }
 
 main {
   margin-top: 13rem; }
@@ -123,7 +164,7 @@ main {
     margin: 1rem; }
     main .contenidoMain h1 {
       text-align: center;
-      font-size: 3rem;
+      font-size: 3.5rem;
       font-weight: bold;
       font-family: "Josefin Sans", sans-serif;
       font-family: "Roboto", sans-serif;
@@ -170,7 +211,7 @@ main {
   .mainExperiencias h1 {
     padding-top: 5rem;
     text-align: center;
-    font-size: 3rem;
+    font-size: 3.5rem;
     font-weight: bold;
     font-family: "Josefin Sans", sans-serif;
     font-family: "Roboto", sans-serif;
@@ -281,7 +322,7 @@ main {
   text-align: center; }
   .mainSomos h1 {
     text-align: center;
-    font-size: 3rem;
+    font-size: 3.5rem;
     font-weight: bold;
     font-family: "Josefin Sans", sans-serif;
     font-family: "Roboto", sans-serif;
@@ -323,7 +364,7 @@ main {
   .mainExperiencias h1 {
     padding-top: 5rem;
     text-align: center;
-    font-size: 3rem;
+    font-size: 3.5rem;
     font-weight: bold;
     font-family: "Josefin Sans", sans-serif;
     font-family: "Roboto", sans-serif;
@@ -430,7 +471,7 @@ main .tituloContacto {
   margin-top: -4rem; }
   main .tituloContacto h1 {
     text-align: center;
-    font-size: 3rem;
+    font-size: 3.5rem;
     font-weight: bold;
     font-family: "Josefin Sans", sans-serif;
     font-family: "Roboto", sans-serif;
@@ -560,7 +601,7 @@ main .cuerpoContacto {
 /* PANTALLA  Mobile Recorrido Virtual  */
 main h1 {
   text-align: center;
-  font-size: 3rem;
+  font-size: 3.5rem;
   font-weight: bold;
   font-family: "Josefin Sans", sans-serif;
   font-family: "Roboto", sans-serif;
@@ -597,15 +638,17 @@ main .container {
       color: #fff;
       pointer-events: none;
       text-align: center;
-      font-size: 2.2rem;
+      font-size: 2rem;
       font-family: "Water Brush", cursive;
       cursor: pointer;
       z-index: 4;
       background-color: rgba(27, 31, 30, 0.3);
-      padding-left: 1rem;
-      padding-right: 1rem; }
+      padding-left: 0.7rem;
+      padding-right: 0.7rem; }
   main .container .gastronomia {
     grid-column: span 2; }
+    main .container .gastronomia .galleryItem .text {
+      font-size: 1.7rem; }
   main .container .bangkok {
     grid-column: span 5;
     grid-row: span 2; }
@@ -681,17 +724,17 @@ main .container {
 .contenedorSubpagina {
   display: grid;
   height: 100vh;
-  grid-template-columns: 8.5rem auto;
-  grid-template-areas: "aside main "  "aside footer "; }
+  grid-template-areas: "asideUno asideUno " "asideDos asideDos" "main main " "footer footer"; }
   .contenedorSubpagina main {
     grid-area: main; }
     .contenedorSubpagina main h1 {
       text-align: center;
-      font-size: 3rem;
+      font-size: 3.5rem;
       font-weight: bold;
       font-family: "Josefin Sans", sans-serif;
       font-family: "Roboto", sans-serif;
-      font-family: "Aclonica", sans-serif; }
+      font-family: "Aclonica", sans-serif;
+      margin-top: -8rem; }
     .contenedorSubpagina main section {
       display: flex;
       flex-direction: column;
@@ -703,16 +746,16 @@ main .container {
         font-family: "Roboto", sans-serif;
         font-family: "Water Brush", cursive;
         text-align: center;
-        font-size: 2rem;
+        font-size: 2.5rem;
         margin: 0.5rem; }
       .contenedorSubpagina main section article {
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin: 2rem; }
+        margin: 1.5rem; }
         .contenedorSubpagina main section article .image img {
           border-radius: 10%;
-          width: 17rem;
+          width: 23rem;
           height: auto; }
         .contenedorSubpagina main section article p {
           margin: 1rem;
@@ -722,7 +765,8 @@ main .container {
 /* PANTALLA  TABLET BANGKOK  */
 @media only screen and (min-width: 768px) {
   .contenedorSubpagina {
-    grid-template-columns: 0.5fr 5fr; }
+    grid-template-columns: 0.5fr 5fr;
+    grid-template-areas: "asideUno main" "asideDos main" "asideDos footer"; }
     .contenedorSubpagina main h1 {
       font-size: 4.7rem;
       text-align: center;

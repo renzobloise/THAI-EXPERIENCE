@@ -7,16 +7,17 @@
 .contenedorSubpagina {
     display: grid;
     height: 100vh;
-    grid-template-columns: 8.5rem auto;
-    grid-template-areas: "aside main "
-
-        "aside footer ";
+    grid-template-areas: "asideUno asideUno "
+                        "asideDos asideDos"
+                         "main main "
+                          "footer footer";
 
     main {
         grid-area: main;
 
         h1 {
             @include h1mobile;
+            margin-top: -8rem;
         }
 
         section {
@@ -36,12 +37,12 @@
                 display: flex;
                 flex-direction: column;
                 align-items: center;
-                margin: 2rem;
+                margin: 1.5rem;
 
                 .image {
                     img {
                         border-radius: 10%;
-                        width: 17rem;
+                        width: 23rem;
                         height: auto;
                     }
                 }
@@ -62,6 +63,9 @@
     .contenedorSubpagina {
 
         grid-template-columns: 0.5fr 5fr;
+        grid-template-areas: "asideUno main"
+                    "asideDos main"
+                    "asideDos footer";
 
         main {
             h1 {

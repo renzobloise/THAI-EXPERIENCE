@@ -52,19 +52,28 @@ main {
                     color: #fff;
                     pointer-events: none;
                     text-align: center;
-                    font-size: 2.2rem;
+                    font-size: 2rem;
                     font-family: $fuenteCursiva;
                     cursor: pointer;
                     z-index: 4;
                     background-color: rgba(27, 31, 30, 0.3);
-                    padding-left: 1rem;
-                    padding-right: 1rem;
+                    padding-left: 0.7rem;
+                    padding-right: 0.7rem;
                 }
+               
             }
         }
 
         .gastronomia {
             grid-column: span 2;
+
+            .galleryItem{
+                .text{
+                    font-size: 1.7rem;
+                }
+            }
+            
+            
         }
 
         .bangkok {
