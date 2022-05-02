@@ -1,4 +1,5 @@
-/*ESTILOS PARA LAS SUBPAGINAS DE RECORRIDO VIRTUAL*/
+/*ESTILOS PARA LAS SUBPAGINAS DE RECORRIDO VIRTUAL
+BANGKOK - NORTE - CENTRO - SUR - GASTRONOMIA - CULTURA - TIPS*/
 
 #bodyBangkok {
     background: $fondoSubpaginaBangkok;
@@ -49,7 +50,6 @@
             h1 {
                 font-size: $tamanio-h1-mobile - 0.5;
             }
-
         }
 
         h2 {
@@ -58,14 +58,12 @@
             font-size: 1.7rem;
         }
 
-
         section {
             display: flex;
             flex-direction: column;
             margin-top: 4rem;
             align-items: center;
             flex-wrap: nowrap;
-
 
             h3 {
                 @include tituloCursivaMobile;
@@ -97,7 +95,6 @@
                     font-size: $tamanio-parrafo-mobile;
 
                 }
-
             }
         }
     }
@@ -106,7 +103,6 @@
 /* PANTALLA  TABLET BANGKOK  */
 @media only screen and (min-width:768px) {
     .contenedorSubpagina {
-
         grid-template-columns: 0.5fr 5fr;
         grid-template-areas: "asideUno main"
             "asideDos main"
@@ -125,12 +121,10 @@
             }
 
             h2 {
-
                 font-size: 2.5rem;
             }
 
             section {
-
                 align-items: flex-end;
 
                 h3 {
@@ -139,7 +133,6 @@
                 }
 
                 article {
-
                     margin: 1rem;
 
                     .image {
@@ -155,14 +148,11 @@
                     p {
                         font-size: $tamanio-parrafo-tablet;
                         text-align: justify;
-
                     }
 
                     .textoVestimenta {
                         font-size: $tamanio-parrafo-tablet;
-
                     }
-
                 }
             }
 
@@ -170,8 +160,6 @@
                 align-items: flex-start;
                 margin-left: 2rem;
             }
-
-
         }
     }
 }
@@ -180,8 +168,6 @@
 /* PANTALLA  DESKTOP BANGKOK  */
 @media only screen and (min-width:1200px) {
     .contenedorSubpagina {
-
-
         main {
             h1 {
                 @include h1desktop;
@@ -194,9 +180,7 @@
             }
 
             section {
-
                 align-items: flex-end;
-
 
                 h3 {
                     @include tituloCursivaDesktop;
@@ -214,21 +198,17 @@
                         img {
                             width: 27rem;
                             height: auto;
-
                         }
                     }
 
                     p {
                         font-size: $tamanio-parrafo-desktop;
                         text-align: justify;
-
                     }
 
                     .textoVestimenta {
                         font-size: $tamanio-parrafo-desktop;
-
                     }
-
                 }
             }
 
@@ -250,8 +230,5 @@
             }
 
         }
-
-
-
     }
 }

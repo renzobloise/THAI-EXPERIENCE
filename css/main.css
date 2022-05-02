@@ -1,3 +1,9 @@
+.experiencias .opciones h2 {
+  padding-top: 2rem;
+  font-size: 2.5rem;
+  font-family: "Aclonica", sans-serif;
+  font-family: "Roboto", sans-serif; }
+
 @keyframes move-down {
   0% {
     top: 10%; }
@@ -69,7 +75,7 @@ footer {
   margin-bottom: 0rem;
   padding-top: 3rem; }
 
-/*ASIDE PANTALLA MOBILE*/
+/*ASIDES DE LAS SUBPAGINAS DE RECORRIDO VIRTUAL PANTALLA MOBILE*/
 #asideUno {
   grid-area: asideUno;
   background-color: #121010;
@@ -159,7 +165,7 @@ footer {
   background-repeat: no-repeat; }
 
 main {
-  margin-top: 13rem; }
+  margin-top: 16rem; }
   main .contenidoMain {
     width: auto;
     transition: .5s ease-in-out;
@@ -182,8 +188,22 @@ main {
       font-size: 2rem;
       text-align: center; }
 
-/* ESTILOS INDEX PANTALLA DESKTOP */
+/*ESTILOS INDEX PANTALLA TABLET*/
 @media only screen and (min-width: 768px) {
+  main .contenidoMain {
+    margin: 3rem; }
+    main .contenidoMain h1 {
+      font-size: 4.7rem;
+      text-align: center;
+      font-weight: bold;
+      font-family: "Josefin Sans", sans-serif;
+      font-family: "Roboto", sans-serif;
+      font-family: "Aclonica", sans-serif; }
+    main .contenidoMain p {
+      font-size: 3rem; } }
+
+/* ESTILOS INDEX PANTALLA DESKTOP */
+@media only screen and (min-width: 1024px) {
   main .contenidoMain {
     margin: 5rem; }
     main .contenidoMain h1 {
@@ -195,121 +215,6 @@ main {
       font-family: "Aclonica", sans-serif; }
     main .contenidoMain p {
       font-size: 3.5rem; } }
-
-.experiencias .opciones h2 {
-  padding-top: 2rem;
-  font-size: 2.5rem;
-  font-family: "Aclonica", sans-serif;
-  font-family: "Roboto", sans-serif; }
-
-/* Estilos experiencias MOBILE */
-#bodyExperiencias {
-  background-color: #1b1f1e; }
-
-.mainExperiencias {
-  background-image: url("../images/fondoProyectos3.jpg");
-  background-position: top;
-  background-size: cover;
-  height: auto;
-  margin-top: -10rem; }
-  .mainExperiencias h1 {
-    padding-top: 5rem;
-    text-align: center;
-    font-size: 3.5rem;
-    font-weight: bold;
-    font-family: "Josefin Sans", sans-serif;
-    font-family: "Roboto", sans-serif;
-    font-family: "Aclonica", sans-serif; }
-  .mainExperiencias .primerParrafo {
-    display: flex;
-    justify-content: flex-end;
-    padding: 1rem;
-    margin-right: 1.8rem; }
-    .mainExperiencias .primerParrafo p {
-      padding: 1rem;
-      font-size: 1.1rem;
-      background-color: rgba(27, 31, 30, 0.5);
-      width: 17rem;
-      text-align: justify; }
-
-.experiencias {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center; }
-  .experiencias .opciones {
-    margin: 1rem;
-    text-align: center; }
-    .experiencias .opciones h2 {
-      font-family: "Water Brush", cursive; }
-    .experiencias .opciones .descripcion {
-      font-size: 1.1rem;
-      margin: 1.5rem; }
-      .experiencias .opciones .descripcion ul li {
-        padding-top: 1rem;
-        list-style: none; }
-      .experiencias .opciones .descripcion button {
-        background-color: #2a302f;
-        border: 0.1rem solid white;
-        padding: 0.3rem;
-        transition: .5s ease-in-out; }
-        .experiencias .opciones .descripcion button a {
-          font-size: 0.9rem;
-          text-decoration: none;
-          color: white; }
-        .experiencias .opciones .descripcion button:hover {
-          transform: scale(1.1); }
-
-/*PANTALLA TABLET EXPERIENCIAS*/
-@media only screen and (min-width: 768px) {
-  .mainExperiencias h1 {
-    font-size: 4.7rem;
-    text-align: center;
-    font-weight: bold;
-    font-family: "Josefin Sans", sans-serif;
-    font-family: "Roboto", sans-serif;
-    font-family: "Aclonica", sans-serif; }
-  .mainExperiencias .primerParrafo {
-    margin-right: 2rem; }
-    .mainExperiencias .primerParrafo p {
-      font-size: 1.3rem;
-      width: 25rem; }
-  .experiencias .opciones h2 {
-    font-size: 4rem; }
-  .experiencias .opciones .descripcion p {
-    font-size: 1.3rem; }
-  .experiencias .opciones .descripcion ul li {
-    font-size: 1.3rem; }
-  .experiencias .opciones .descripcion button {
-    padding: 0.5rem; }
-    .experiencias .opciones .descripcion button a {
-      font-size: 1.2rem; } }
-
-/* PANTALLA  DESKTOP EXPERIENCIAS  */
-@media only screen and (min-width: 1024px) {
-  .mainExperiencias h1 {
-    font-size: 5rem;
-    text-align: center;
-    font-weight: bold;
-    font-family: "Josefin Sans", sans-serif;
-    font-family: "Roboto", sans-serif;
-    font-family: "Aclonica", sans-serif; }
-  .mainExperiencias .primerParrafo {
-    margin-top: 4rem;
-    margin-right: 2rem; }
-    .mainExperiencias .primerParrafo p {
-      font-size: 2.3rem;
-      width: 40rem; }
-  .experiencias .opciones h2 {
-    font-size: 4.5rem; }
-  .experiencias .opciones .descripcion {
-    margin: 3rem; }
-    .experiencias .opciones .descripcion p {
-      font-size: 1.5rem; }
-    .experiencias .opciones .descripcion ul li {
-      font-size: 1.5rem; }
-    .experiencias .opciones .descripcion button a {
-      font-size: 1.5rem; } }
 
 /* ESTILOS Quienes Somos */
 #bodyQuienes {
@@ -398,7 +303,7 @@ main {
 
 @media only screen and (min-width: 1024px) {
   .mainSomos .cuerpoQuienes h1 {
-    padding-top: 13rem;
+    padding-top: 10rem;
     font-size: 5rem;
     text-align: center;
     font-weight: bold;
@@ -426,12 +331,6 @@ main {
     .mainSomos .nosotros .cuerpoNosotros img {
       width: 35rem;
       border-radius: 72% 0% 68% 10% / 61% 10% 54% 10%; } }
-
-.experiencias .opciones h2 {
-  padding-top: 2rem;
-  font-size: 2.5rem;
-  font-family: "Aclonica", sans-serif;
-  font-family: "Roboto", sans-serif; }
 
 /* Estilos experiencias MOBILE */
 #bodyExperiencias {
@@ -647,7 +546,7 @@ main .cuerpoContacto {
         overflow: auto; } }
 
 /*ESTILOS DE CONTACTO DESKTOP*/
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 1024px) {
   main .tituloContacto h1 {
     font-size: 5rem;
     text-align: center;
@@ -799,7 +698,8 @@ main .container {
     main .container .sur {
       grid-column: span 4; } }
 
-/*ESTILOS PARA LAS SUBPAGINAS DE RECORRIDO VIRTUAL*/
+/*ESTILOS PARA LAS SUBPAGINAS DE RECORRIDO VIRTUAL
+BANGKOK - NORTE - CENTRO - SUR - GASTRONOMIA - CULTURA - TIPS*/
 #bodyBangkok {
   background: linear-gradient(90deg, #918f8c 64%, rgba(191, 32, 21, 0.703519) 100%); }
 

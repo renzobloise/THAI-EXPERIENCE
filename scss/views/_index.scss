@@ -6,31 +6,25 @@
     background-position: top;
     background-size: cover;
     background-repeat: no-repeat;
-    
 }
 
 main {
-    margin-top: $margen-top-primario;
-   
+    margin-top: $margen-top-primario + 3;
     .contenidoMain {
         width: auto;
         transition: .5s ease-in-out;
         text-decoration: none;
         background-color: $color-con-transparencia-principal;
         margin: 1rem;
-
         h1 {
             @include h1mobile;
         }
-
         a {
             text-decoration: none;
         }
-
         &:hover {
             transform: scale(1.1);
         }
-
         p{
             font-family: $fuente-principal;
             font-size: 2rem;
@@ -38,9 +32,23 @@ main {
         }
     }
 }
+/*ESTILOS INDEX PANTALLA TABLET*/
+@media only screen and (min-width:768px) {
+    main {
+        .contenidoMain {
+            margin: 3rem;
+            h1 {
+                @include h1tablet;
+            }
+            p{
+                font-size: 3rem;
+            }
+        }
+    }
+}
 
 /* ESTILOS INDEX PANTALLA DESKTOP */
-@media only screen and (min-width:768px) {
+@media only screen and (min-width:1024px) {
     main {
         .contenidoMain {
             margin: 5rem;

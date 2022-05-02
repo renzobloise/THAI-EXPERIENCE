@@ -6,7 +6,6 @@
 }
 
 /* PANTALLA  Mobile Recorrido Virtual  */
-
 main {
     h1 {
         @include h1mobile;
@@ -60,20 +59,17 @@ main {
                     padding-left: 0.7rem;
                     padding-right: 0.7rem;
                 }
-               
             }
         }
 
         .gastronomia {
             grid-column: span 2;
 
-            .galleryItem{
-                .text{
+            .galleryItem {
+                .text {
                     font-size: 1.7rem;
                 }
             }
-            
-            
         }
 
         .bangkok {
