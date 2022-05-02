@@ -1,7 +1,7 @@
 /* FOOTER PANTALLA MOBILE*/
 footer {
    
-    padding-top: 16rem;
+    padding-top: 8rem;
     height: auto;
     grid-area: footer;
    
@@ -20,6 +20,9 @@ footer {
         font-weight: bold;
     }
 }
+
+
+
 /* FOOTER PANTALLA DESKTOP*/
 @media only screen and (min-width:768px) {
     footer {

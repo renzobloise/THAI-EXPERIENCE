@@ -40,7 +40,7 @@ header .dropdown-item {
 
 /* FOOTER PANTALLA MOBILE*/
 footer {
-  padding-top: 16rem;
+  padding-top: 8rem;
   height: auto;
   grid-area: footer; }
   footer .redes {
@@ -358,14 +358,15 @@ main {
   justify-content: center;
   align-items: center;
   margin: 1rem;
-  margin-bottom: -8rem; }
+  margin-bottom: -8rem;
+  padding-bottom: 7rem; }
   .mainSomos .nosotros .cuerpoNosotros p {
     text-align: justify;
     font-size: 1rem;
     padding: 1rem;
     font-family: "Aclonica", sans-serif; }
   .mainSomos .nosotros .cuerpoNosotros img {
-    width: 25rem;
+    width: 24rem;
     border-radius: 20%; }
 
 @media only screen and (min-width: 768px) {
@@ -800,25 +801,25 @@ main .container {
 
 /*ESTILOS PARA LAS SUBPAGINAS DE RECORRIDO VIRTUAL*/
 #bodyBangkok {
-  background: linear-gradient(90deg, #b5abaa 60%, #ac1904 100%); }
+  background: linear-gradient(90deg, #918f8c 64%, rgba(191, 32, 21, 0.703519) 100%); }
 
 #bodySur {
-  background: linear-gradient(90deg, #aab5b5 60%, #20c4c8 100%); }
+  background: linear-gradient(90deg, #918f8c 64%, rgba(69, 182, 175, 0.863183) 100%); }
 
 #bodyNorte {
-  background: linear-gradient(90deg, #b5afaa 60%, #a2470f 100%); }
+  background: linear-gradient(90deg, #918f8c 64%, rgba(87, 44, 5, 0.864583) 100%); }
 
 #bodyCentro {
-  background: linear-gradient(90deg, #b5afaa 60%, #063e0c 100%); }
+  background: linear-gradient(90deg, #918f8c 64%, rgba(5, 87, 17, 0.809961) 100%); }
 
 #bodyGastronomia {
-  background: linear-gradient(90deg, #b5afaa 60%, #ed5a22 100%); }
+  background: linear-gradient(90deg, #918f8c 64%, rgba(204, 98, 24, 0.863183) 100%); }
 
 #bodyCultura {
-  background: linear-gradient(90deg, #b5afaa 60%, #602a79 100%); }
+  background: linear-gradient(90deg, #918f8c 64%, rgba(159, 11, 210, 0.616684) 100%); }
 
 #bodyTips {
-  background: linear-gradient(90deg, #b5afaa 60%, #1a15bf 100%); }
+  background: linear-gradient(90deg, #918f8c 64%, rgba(11, 26, 210, 0.616684) 100%); }
 
 /*PANTALLA MOBILE*/
 .contenedorSubpagina {
@@ -835,6 +836,8 @@ main .container {
       font-family: "Roboto", sans-serif;
       font-family: "Aclonica", sans-serif;
       margin-top: -8rem; }
+    .contenedorSubpagina main .tituloGastronomia h1 {
+      font-size: 3rem; }
     .contenedorSubpagina main h2 {
       text-align: center;
       font-family: "Aclonica", sans-serif;
@@ -881,6 +884,8 @@ main .container {
       font-family: "Josefin Sans", sans-serif;
       font-family: "Roboto", sans-serif;
       font-family: "Aclonica", sans-serif; }
+    .contenedorSubpagina main .tituloGastronomia h1 {
+      font-size: 4.2rem; }
     .contenedorSubpagina main h2 {
       font-size: 2.5rem; }
     .contenedorSubpagina main section {
@@ -912,6 +917,13 @@ main .container {
 /* PANTALLA  DESKTOP BANGKOK  */
 @media only screen and (min-width: 1200px) {
   .contenedorSubpagina main h1 {
+    font-size: 5rem;
+    text-align: center;
+    font-weight: bold;
+    font-family: "Josefin Sans", sans-serif;
+    font-family: "Roboto", sans-serif;
+    font-family: "Aclonica", sans-serif; }
+  .contenedorSubpagina main .tituloGastronomia h1 {
     font-size: 5rem;
     text-align: center;
     font-weight: bold;

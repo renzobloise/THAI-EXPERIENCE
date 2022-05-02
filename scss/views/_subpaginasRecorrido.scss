@@ -3,22 +3,28 @@
 #bodyBangkok {
     background: $fondoSubpaginaBangkok;
 }
-#bodySur{
+
+#bodySur {
     background: $fondoSubpaginaSur;
 }
-#bodyNorte{
+
+#bodyNorte {
     background: $fondoSubpaginaNorte;
 }
-#bodyCentro{
+
+#bodyCentro {
     background: $fondoSubpaginaCentro;
 }
-#bodyGastronomia{
+
+#bodyGastronomia {
     background: $fondoSubpaginaGastronomia;
 }
-#bodyCultura{
+
+#bodyCultura {
     background: $fondoSubpaginaCultura;
 }
-#bodyTips{
+
+#bodyTips {
     background: $fondoSubpaginaTips;
 }
 
@@ -27,9 +33,9 @@
     display: grid;
     height: 100vh;
     grid-template-areas: "asideUno asideUno "
-                        "asideDos asideDos"
-                         "main main "
-                          "footer footer";
+        "asideDos asideDos"
+        "main main "
+        "footer footer";
 
     main {
         grid-area: main;
@@ -38,12 +44,20 @@
             @include h1mobile;
             margin-top: -8rem;
         }
-        h2{
+
+        .tituloGastronomia {
+            h1 {
+                font-size: $tamanio-h1-mobile - 0.5;
+            }
+
+        }
+
+        h2 {
             text-align: center;
             font-family: $fuente-principal;
             font-size: 1.7rem;
         }
-        
+
 
         section {
             display: flex;
@@ -76,11 +90,12 @@
                     margin: 1rem;
                     font-size: $tamanio-parrafo-mobile;
                     text-align: justify;
-    
+
                 }
-                .textoVestimenta{
+
+                .textoVestimenta {
                     font-size: $tamanio-parrafo-mobile;
-              
+
                 }
 
             }
@@ -94,28 +109,37 @@
 
         grid-template-columns: 0.5fr 5fr;
         grid-template-areas: "asideUno main"
-                    "asideDos main"
-                    "asideDos footer";
+            "asideDos main"
+            "asideDos footer";
 
         main {
             h1 {
                 margin-top: 2rem;
                 @include h1tablet;
             }
-            h2{
-             
+
+            .tituloGastronomia {
+                h1 {
+                    font-size: $tamanio-h1-tablet - 0.5;
+                }
+            }
+
+            h2 {
+
                 font-size: 2.5rem;
             }
 
             section {
 
                 align-items: flex-end;
+
                 h3 {
                     @include tituloCursivaTablet;
                     margin-right: 2rem;
                 }
+
                 article {
-                    
+
                     margin: 1rem;
 
                     .image {
@@ -131,24 +155,27 @@
                     p {
                         font-size: $tamanio-parrafo-tablet;
                         text-align: justify;
-                       
+
                     }
-                    .textoVestimenta{
+
+                    .textoVestimenta {
                         font-size: $tamanio-parrafo-tablet;
-                  
+
                     }
 
                 }
             }
-            .sectionDos{
+
+            .sectionDos {
                 align-items: flex-start;
                 margin-left: 2rem;
             }
-          
+
 
         }
     }
 }
+
 
 /* PANTALLA  DESKTOP BANGKOK  */
 @media only screen and (min-width:1200px) {
@@ -159,7 +186,12 @@
             h1 {
                 @include h1desktop;
             }
-            
+
+            .tituloGastronomia {
+                h1 {
+                    @include h1desktop;
+                }
+            }
 
             section {
 
@@ -189,11 +221,12 @@
                     p {
                         font-size: $tamanio-parrafo-desktop;
                         text-align: justify;
-                       
+
                     }
-                    .textoVestimenta{
+
+                    .textoVestimenta {
                         font-size: $tamanio-parrafo-desktop;
-                  
+
                     }
 
                 }
