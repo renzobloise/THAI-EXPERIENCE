@@ -4,32 +4,32 @@
     height: auto;
 }
 
+/*ESTILOS QUIENES SOMOS PANTALLA EXTRASMALL (-400px)*/
 .mainSomos {
     .cuerpoQuienes {
         background-image: url("../images/caratulaQuienes.jpg");
         background-position: top;
         background-size: cover;
         text-align: center;
-        margin-top: -12rem;
+        margin-top: -10rem;
 
         h1 {
             padding-top: 8rem;
             padding-left: 2rem;
             padding-right: 2rem;
-
-            @include h1mobile;
+            @include h1extraSmall;
         }
 
         .textoQuienes {
-            padding-bottom: 5rem;
+            padding-bottom: 2rem;
 
             p {
                 background-color: rgba(183, 123, 21, 0.4);
                 margin-top: 1rem;
-                font-size: 1rem;
-                margin-left: 1.5rem;
-                margin-right: 1.5rem;
-                padding: 1rem;
+                font-size: $tamanio-parrafo-extra-small;
+                margin-left: 1rem;
+                margin-right: 1rem;
+                padding: 0.5rem;
                 font-family: $fuente-principal;
             }
         }
@@ -37,9 +37,9 @@
 
     .nosotros {
         h2 {
-            padding-top: 4rem;
+            padding-top: 3rem;
             @include tituloCursivaMobile;
-            font-size: 4rem;
+            font-size: 3.5rem;
         }
 
         .cuerpoNosotros {
@@ -49,21 +49,66 @@
 
             p {
                 text-align: justify;
-                font-size: 1rem;
+                font-size: $tamanio-parrafo-extra-small;
                 padding: 1rem;
                 font-family: $fuente-principal;
             }
 
             img {
-                width: 24rem;
+                width: 15rem;
                 border-radius: 20%;
             }
 
-            padding-bottom: 7rem;
+            padding-bottom: 5rem;
         }
     }
 }
 
+/*ESTILOS QUIENES SOMOS PANTALLA MOBILE*/
+@media only screen and (min-width:400px) {
+    .mainSomos {
+        .cuerpoQuienes {
+            margin-top: -12rem;
+
+            h1 {
+                @include h1mobile;
+            }
+
+            .textoQuienes {
+                padding-bottom: 5rem;
+
+                p {
+                    font-size: $tamanio-parrafo-mobile;
+                    margin-left: 1.5rem;
+                    margin-right: 1.5rem;
+                    padding: 1rem;
+                }
+            }
+        }
+
+        .nosotros {
+            h2 {
+                padding-top: 4rem;
+                font-size: 4rem;
+            }
+
+            .cuerpoNosotros {
+
+                p {
+                    font-size: $tamanio-parrafo-mobile;
+                }
+
+                img {
+                    width: 21rem;
+                }
+
+                padding-bottom: 7rem;
+            }
+        }
+    }
+}
+
+/*ESTILOS QUIENES SOMOS PANTALLA TABLET*/
 @media only screen and (min-width:768px) {
     .mainSomos {
         .cuerpoQuienes {
@@ -76,7 +121,7 @@
                 padding-bottom: 5rem;
 
                 p {
-                    font-size: 1.5rem;
+                    font-size: $tamanio-parrafo-tablet + 0.2;
                     padding: 1.5rem;
                 }
             }
@@ -90,30 +135,30 @@
 
             .cuerpoNosotros {
                 p {
-                    font-size: 1.3rem;
+                    font-size: $tamanio-parrafo-tablet + 0.2;
                 }
 
                 img {
                     width: 35rem;
-                    border-radius: 20%;
                 }
             }
         }
     }
 }
 
+/*ESTILOS QUIENES SOMOS PANTALLA DESKTOP*/
 @media only screen and (min-width:1024px) {
     .mainSomos {
         .cuerpoQuienes {
-         
-            h1 {            
+
+            h1 {
                 padding-top: 10rem;
                 @include h1desktop;
             }
 
             .textoQuienes {
                 p {
-                    font-size: 1.7rem;
+                    font-size: $tamanio-parrafo-desktop + 0.2;
                     padding: 2rem;
                 }
             }
@@ -129,7 +174,7 @@
                 @include flexRow;
 
                 p {
-                    font-size: 1.3rem;
+                    font-size: $tamanio-parrafo-desktop ;
                     padding-right: 3rem;
                 }
 

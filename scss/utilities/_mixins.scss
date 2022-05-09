@@ -10,6 +10,14 @@
     flex-wrap: nowrap;
     justify-content: center;
 }
+@mixin h1extraSmall{
+    text-align: center;
+    font-size: $tamanio-h1-extra-small;
+    font-weight: $negrita-h1;
+    font-family: $fuente-terciaria;
+    font-family: $fuente-secundaria;
+    font-family: $fuente-principal;
+}
 @mixin h1mobile{
     text-align: center;
     font-size: $tamanio-h1-mobile;

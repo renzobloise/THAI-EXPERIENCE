@@ -157,15 +157,16 @@ footer {
         margin-left: -1rem;
         font-size: 2rem; } }
 
-/*ESTILOS DEL INDEX MOBILE*/
+/*ESTILOS DEL INDEX */
 #bodyIndex {
   background-image: url("../images/fondoIndex.jpg");
   background-position: top;
   background-size: cover;
   background-repeat: no-repeat; }
 
+/*ESTILOS INDEX PANTALLA EXTRA SMALL (Hasta 400px)*/
 main {
-  margin-top: 16rem; }
+  margin-top: 13rem; }
   main .contenidoMain {
     width: auto;
     transition: .5s ease-in-out;
@@ -173,20 +174,29 @@ main {
     background-color: rgba(7, 115, 81, 0.4);
     margin: 1rem; }
     main .contenidoMain h1 {
-      text-align: center;
-      font-size: 3.5rem;
-      font-weight: bold;
-      font-family: "Josefin Sans", sans-serif;
-      font-family: "Roboto", sans-serif;
-      font-family: "Aclonica", sans-serif; }
+      font-size: 2.2rem; }
     main .contenidoMain a {
       text-decoration: none; }
     main .contenidoMain:hover {
       transform: scale(1.1); }
     main .contenidoMain p {
       font-family: "Aclonica", sans-serif;
-      font-size: 2rem;
+      font-size: 1.7rem;
       text-align: center; }
+
+/*ESTILOS INDEX PANTALLA  MOBILE*/
+@media only screen and (min-width: 400px) {
+  main {
+    margin-top: 16rem; }
+    main .contenidoMain h1 {
+      text-align: center;
+      font-size: 3.5rem;
+      font-weight: bold;
+      font-family: "Josefin Sans", sans-serif;
+      font-family: "Roboto", sans-serif;
+      font-family: "Aclonica", sans-serif; }
+    main .contenidoMain p {
+      font-size: 2.2rem; } }
 
 /*ESTILOS INDEX PANTALLA TABLET*/
 @media only screen and (min-width: 768px) {
@@ -221,41 +231,42 @@ main {
   background-color: #1b1f1e;
   height: auto; }
 
+/*ESTILOS QUIENES SOMOS PANTALLA EXTRASMALL (-400px)*/
 .mainSomos .cuerpoQuienes {
   background-image: url("../images/caratulaQuienes.jpg");
   background-position: top;
   background-size: cover;
   text-align: center;
-  margin-top: -12rem; }
+  margin-top: -10rem; }
   .mainSomos .cuerpoQuienes h1 {
     padding-top: 8rem;
     padding-left: 2rem;
     padding-right: 2rem;
     text-align: center;
-    font-size: 3.5rem;
+    font-size: 2.2rem;
     font-weight: bold;
     font-family: "Josefin Sans", sans-serif;
     font-family: "Roboto", sans-serif;
     font-family: "Aclonica", sans-serif; }
   .mainSomos .cuerpoQuienes .textoQuienes {
-    padding-bottom: 5rem; }
+    padding-bottom: 2rem; }
     .mainSomos .cuerpoQuienes .textoQuienes p {
       background-color: rgba(183, 123, 21, 0.4);
       margin-top: 1rem;
-      font-size: 1rem;
-      margin-left: 1.5rem;
-      margin-right: 1.5rem;
-      padding: 1rem;
+      font-size: 0.8rem;
+      margin-left: 1rem;
+      margin-right: 1rem;
+      padding: 0.5rem;
       font-family: "Aclonica", sans-serif; }
 
 .mainSomos .nosotros h2 {
-  padding-top: 4rem;
+  padding-top: 3rem;
   font-family: "Josefin Sans", sans-serif;
   font-family: "Roboto", sans-serif;
   font-family: "Water Brush", cursive;
   text-align: center;
   font-size: 2.5rem;
-  font-size: 4rem; }
+  font-size: 3.5rem; }
 
 .mainSomos .nosotros .cuerpoNosotros {
   display: flex;
@@ -264,16 +275,45 @@ main {
   align-items: center;
   margin: 1rem;
   margin-bottom: -8rem;
-  padding-bottom: 7rem; }
+  padding-bottom: 5rem; }
   .mainSomos .nosotros .cuerpoNosotros p {
     text-align: justify;
-    font-size: 1rem;
+    font-size: 0.8rem;
     padding: 1rem;
     font-family: "Aclonica", sans-serif; }
   .mainSomos .nosotros .cuerpoNosotros img {
-    width: 24rem;
+    width: 15rem;
     border-radius: 20%; }
 
+/*ESTILOS QUIENES SOMOS PANTALLA MOBILE*/
+@media only screen and (min-width: 400px) {
+  .mainSomos .cuerpoQuienes {
+    margin-top: -12rem; }
+    .mainSomos .cuerpoQuienes h1 {
+      text-align: center;
+      font-size: 3.5rem;
+      font-weight: bold;
+      font-family: "Josefin Sans", sans-serif;
+      font-family: "Roboto", sans-serif;
+      font-family: "Aclonica", sans-serif; }
+    .mainSomos .cuerpoQuienes .textoQuienes {
+      padding-bottom: 5rem; }
+      .mainSomos .cuerpoQuienes .textoQuienes p {
+        font-size: 1.1rem;
+        margin-left: 1.5rem;
+        margin-right: 1.5rem;
+        padding: 1rem; }
+  .mainSomos .nosotros h2 {
+    padding-top: 4rem;
+    font-size: 4rem; }
+  .mainSomos .nosotros .cuerpoNosotros {
+    padding-bottom: 7rem; }
+    .mainSomos .nosotros .cuerpoNosotros p {
+      font-size: 1.1rem; }
+    .mainSomos .nosotros .cuerpoNosotros img {
+      width: 21rem; } }
+
+/*ESTILOS QUIENES SOMOS PANTALLA TABLET*/
 @media only screen and (min-width: 768px) {
   .mainSomos .cuerpoQuienes h1 {
     padding-top: 10rem;
@@ -296,11 +336,11 @@ main {
     font-size: 3rem;
     font-size: 5rem; }
   .mainSomos .nosotros .cuerpoNosotros p {
-    font-size: 1.3rem; }
+    font-size: 1.5rem; }
   .mainSomos .nosotros .cuerpoNosotros img {
-    width: 35rem;
-    border-radius: 20%; } }
+    width: 35rem; } }
 
+/*ESTILOS QUIENES SOMOS PANTALLA DESKTOP*/
 @media only screen and (min-width: 1024px) {
   .mainSomos .cuerpoQuienes h1 {
     padding-top: 10rem;
@@ -326,16 +366,17 @@ main {
     flex-wrap: nowrap;
     justify-content: center; }
     .mainSomos .nosotros .cuerpoNosotros p {
-      font-size: 1.3rem;
+      font-size: 1.5rem;
       padding-right: 3rem; }
     .mainSomos .nosotros .cuerpoNosotros img {
       width: 35rem;
       border-radius: 72% 0% 68% 10% / 61% 10% 54% 10%; } }
 
-/* Estilos experiencias MOBILE */
+/* Estilos experiencias */
 #bodyExperiencias {
   background-color: #1b1f1e; }
 
+/*ESTILOS PANTALLA EXTRA SMALL -400px*/
 .mainExperiencias {
   background-image: url("../images/fondoProyectos3.jpg");
   background-position: top;
@@ -343,9 +384,9 @@ main {
   height: auto;
   margin-top: -10rem; }
   .mainExperiencias h1 {
-    padding-top: 5rem;
+    padding-top: 7rem;
     text-align: center;
-    font-size: 3.5rem;
+    font-size: 2.2rem;
     font-weight: bold;
     font-family: "Josefin Sans", sans-serif;
     font-family: "Roboto", sans-serif;
@@ -353,11 +394,11 @@ main {
   .mainExperiencias .primerParrafo {
     display: flex;
     justify-content: flex-end;
-    padding: 1rem;
-    margin-right: 1.8rem; }
+    padding-left: 1rem;
+    margin-right: 1rem; }
     .mainExperiencias .primerParrafo p {
-      padding: 1rem;
-      font-size: 1.1rem;
+      margin-top: -1rem;
+      font-size: 0.9rem;
       background-color: rgba(27, 31, 30, 0.5);
       width: 17rem;
       text-align: justify; }
@@ -373,22 +414,40 @@ main {
     .experiencias .opciones h2 {
       font-family: "Water Brush", cursive; }
     .experiencias .opciones .descripcion {
-      font-size: 1.1rem;
-      margin: 1.5rem; }
-      .experiencias .opciones .descripcion ul li {
-        padding-top: 1rem;
-        list-style: none; }
+      font-size: 0.9rem;
+      margin: 1rem;
+      text-align: justify; }
       .experiencias .opciones .descripcion button {
         background-color: #2a302f;
         border: 0.1rem solid white;
         padding: 0.3rem;
         transition: .5s ease-in-out; }
         .experiencias .opciones .descripcion button a {
-          font-size: 0.9rem;
+          font-size: 0.8rem;
           text-decoration: none;
           color: white; }
         .experiencias .opciones .descripcion button:hover {
           transform: scale(1.1); }
+
+/*PANTALLA MOBILE EXPERIENCIAS*/
+@media only screen and (min-width: 400px) {
+  .mainExperiencias h1 {
+    padding-top: 5rem;
+    text-align: center;
+    font-size: 3.5rem;
+    font-weight: bold;
+    font-family: "Josefin Sans", sans-serif;
+    font-family: "Roboto", sans-serif;
+    font-family: "Aclonica", sans-serif; }
+  .mainExperiencias .primerParrafo {
+    padding: 1rem; }
+    .mainExperiencias .primerParrafo p {
+      font-size: 1.2rem; }
+  .experiencias .opciones .descripcion {
+    font-size: 1.1rem;
+    margin: 1.5rem; }
+    .experiencias .opciones .descripcion button a {
+      font-size: 1.1rem; } }
 
 /*PANTALLA TABLET EXPERIENCIAS*/
 @media only screen and (min-width: 768px) {
@@ -406,14 +465,18 @@ main {
       width: 25rem; }
   .experiencias .opciones h2 {
     font-size: 4rem; }
-  .experiencias .opciones .descripcion p {
-    font-size: 1.3rem; }
-  .experiencias .opciones .descripcion ul li {
-    font-size: 1.3rem; }
-  .experiencias .opciones .descripcion button {
-    padding: 0.5rem; }
-    .experiencias .opciones .descripcion button a {
-      font-size: 1.2rem; } }
+  .experiencias .opciones .descripcion {
+    text-align: center; }
+    .experiencias .opciones .descripcion p {
+      text-align: justify;
+      font-size: 1.3rem; }
+    .experiencias .opciones .descripcion ul li {
+      text-align: justify;
+      font-size: 1.3rem; }
+    .experiencias .opciones .descripcion button {
+      padding: 0.5rem; }
+      .experiencias .opciones .descripcion button a {
+        font-size: 1.2rem; } }
 
 /* PANTALLA  DESKTOP EXPERIENCIAS  */
 @media only screen and (min-width: 1024px) {

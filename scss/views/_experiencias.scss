@@ -1,8 +1,9 @@
-/* Estilos experiencias MOBILE */
+/* Estilos experiencias */
 #bodyExperiencias {
     background-color: rgb(27, 31, 30);
 }
 
+/*ESTILOS PANTALLA EXTRA SMALL -400px*/
 .mainExperiencias {
     background-image: url("../images/fondoProyectos3.jpg");
     background-position: top;
@@ -11,19 +12,19 @@
     margin-top: -10rem;
 
     h1 {
-        padding-top: 5rem;
-        @include h1mobile;
+        padding-top: 7rem;
+        @include h1extraSmall;
     }
 
     .primerParrafo {
         display: flex;
         justify-content: flex-end;
-        padding: 1rem;
-        margin-right: 1.8rem;
+        padding-left: 1rem;
+        margin-right: 1rem;
 
         p {
-            padding: 1rem;
-            font-size: $tamanio-parrafo-mobile;
+            margin-top: -1rem;
+            font-size: $tamanio-parrafo-extra-small + 0.1;
             background-color: rgba(27, 31, 30, 0.5);
             width: 17rem;
             text-align: justify;
@@ -44,15 +45,9 @@
         }
 
         .descripcion {
-            font-size: $tamanio-parrafo-mobile;
-            margin: 1.5rem;
-
-            ul {
-                li {
-                    padding-top: 1rem;
-                    list-style: none;
-                }
-            }
+            font-size: $tamanio-parrafo-extra-small + 0.1;
+            margin: 1rem;
+            text-align: justify;
 
             button {
                 background-color: map-get($map: $botonesDark, $key: bg-dark);
@@ -61,13 +56,51 @@
                 transition: .5s ease-in-out;
 
                 a {
-                    font-size: 0.9rem;
+                    font-size: 0.8rem;
                     text-decoration: none;
                     color: white;
                 }
 
                 &:hover {
                     transform: scale(1.1);
+                }
+            }
+        }
+    }
+}
+
+/*PANTALLA MOBILE EXPERIENCIAS*/
+@media only screen and (min-width:400px) {
+    .mainExperiencias {
+
+        h1 {
+            padding-top: 5rem;
+            @include h1mobile;
+        }
+
+        .primerParrafo {
+            padding: 1rem;
+
+            p {
+                font-size: $tamanio-parrafo-mobile + 0.1;
+            }
+        }
+    }
+
+    .experiencias {
+
+        .opciones {
+
+            .descripcion {
+                font-size: $tamanio-parrafo-mobile;
+                margin: 1.5rem;
+
+                button {
+
+                    a {
+                        font-size: 1.1rem;
+                    }
+
                 }
             }
         }
@@ -98,19 +131,22 @@
             }
 
             .descripcion {
+                text-align: center;
                 p {
+                    text-align: justify;
                     font-size: $tamanio-parrafo-tablet;
                 }
 
                 ul {
                     li {
+                        text-align: justify;
                         font-size: $tamanio-parrafo-tablet;
                     }
                 }
 
                 button {
                     padding: 0.5rem;
-
+                  
                     a {
                         font-size: 1.2rem;
                     }
