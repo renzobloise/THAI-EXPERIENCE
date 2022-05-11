@@ -1,76 +1,89 @@
-/*ASIDES DE LAS SUBPAGINAS DE RECORRIDO VIRTUAL PANTALLA MOBILE*/
+/*ASIDES DE LAS SUBPAGINAS DE RECORRIDO VIRTUAL NO LOS MUESTRO EN LA PANTALLA EXTRA SMALL (-400px)*/
 
 #asideUno {
-    grid-area: asideUno;
-    background-color: rgb(18, 16, 16);
-    display: flex;
-    flex-direction: row;
-
-    h2 {
-        display: none;
-
-        a {
-            text-decoration: none;
-            font-family: $fuente-principal;
-            color: white;
-        }
-    }
-
-    ul {
-        margin-left: 0rem;
-        margin-top: 6rem;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
-
-        li {
-            list-style: none;
-            padding-right: 3rem;
-            padding-top: 2rem;
-
-            a {
-                text-decoration: none;
-                color: white;
-                font-family: $fuenteCursiva;
-                font-size: 1.5rem;
-            }
-        }
-    }
+    display: none;
 }
 
 #asideDos {
-    grid-area: asideDos;
-    background-color: rgb(18, 16, 16);
-    display: flex;
-    flex-direction: row;
+    display: none;
+}
 
-    h2 {
-        display: none;
-    }
-
-    ul {
-        margin-left: 0rem;
-        margin-top: -2rem;
+/*ASIDE PANTALLA MOBILE*/
+@media only screen and (min-width:400px) {
+    #asideUno {
+        grid-area: asideUno;
+        background-color: rgb(18, 16, 16);
         display: flex;
         flex-direction: row;
-        align-content: space-evenly;
-
-        li {
-            list-style: none;
-            padding-top: 2rem;
-            padding-left: 1.3rem;
-            padding-right: 1.7rem;
-
+      
+       
+        h2 {
+            display: none;
+    
             a {
                 text-decoration: none;
+                font-family: $fuente-principal;
                 color: white;
-                font-family: $fuenteCursiva;
-                font-size: 1.5rem;
+            }
+        }
+    
+        ul {
+            margin-left: 0rem;    
+            padding-top: 6rem;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+    
+            li {
+                list-style: none;
+                padding-right: 2rem;
+                padding-top: 2rem;
+    
+                a {
+                    text-decoration: none;
+                    color: white;
+                    font-family: $fuenteCursiva;
+                    font-size: 1.5rem;
+                }
+            }
+        }
+    }
+    
+    #asideDos {
+        grid-area: asideDos;
+        background-color: rgb(18, 16, 16);
+        display: flex;
+        flex-direction: row;
+       
+       
+    
+        h2 {
+            display: none;
+        }
+    
+        ul {
+            margin-left: 0rem;
+            margin-top: -2rem;          
+            display: flex;
+            flex-direction: row;
+            align-content: space-evenly;
+    
+            li {
+                list-style: none;
+                padding-top: 2rem;
+                padding-left: 1.3rem;
+                padding-right: 1.5rem;
+    
+                a {
+                    text-decoration: none;
+                    color: white;
+                    font-family: $fuenteCursiva;
+                    font-size: 1.5rem;
+                }
             }
         }
     }
 }
-
 
 /*ASIDE PANTALLA TABLET Y DESKTOP*/
 @media only screen and (min-width:768px) {
@@ -87,6 +100,7 @@
         ul {
             flex-direction: column;
             margin-top: 1rem;
+            padding-top: 0rem;
 
             li {
                 a {

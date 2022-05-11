@@ -29,44 +29,44 @@ BANGKOK - NORTE - CENTRO - SUR - GASTRONOMIA - CULTURA - TIPS*/
     background: $fondoSubpaginaTips;
 }
 
-/*PANTALLA MOBILE*/
+/*PANTALLA EXTRA SMALL -400px*/
 .contenedorSubpagina {
     display: grid;
     height: 100vh;
-    grid-template-areas: "asideUno asideUno "
-        "asideDos asideDos"
-        "main main "
-        "footer footer";
+    grid-template-areas: "asideUno"
+        "asideDos"
+        "main"
+        "footer";
 
     main {
         grid-area: main;
 
         h1 {
-            @include h1mobile;
-            margin-top: -8rem;
+            @include h1extraSmall;
+            margin-top: -4rem;
         }
 
         .tituloGastronomia {
             h1 {
-                font-size: $tamanio-h1-mobile - 0.5;
+                font-size: $tamanio-h1-extra-small - 0.5;
             }
         }
 
         h2 {
             text-align: center;
             font-family: $fuente-principal;
-            font-size: 1.7rem;
+            font-size: 1.4rem;
         }
 
         section {
             display: flex;
             flex-direction: column;
-            margin-top: 4rem;
+            margin-top: 2rem;
             align-items: center;
             flex-wrap: nowrap;
 
             h3 {
-                @include tituloCursivaMobile;
+                @include tituloCursivaExtraSmall;
                 margin: 0.5rem;
             }
 
@@ -74,19 +74,20 @@ BANGKOK - NORTE - CENTRO - SUR - GASTRONOMIA - CULTURA - TIPS*/
                 display: flex;
                 flex-direction: column;
                 align-items: center;
-                margin: 1.5rem;
+                margin: 1rem;
+               
 
                 .image {
                     img {
                         border-radius: 10%;
-                        width: 23rem;
+                        width: 13rem;
                         height: auto;
                     }
                 }
 
                 p {
                     margin: 1rem;
-                    font-size: $tamanio-parrafo-mobile;
+                    font-size: $tamanio-parrafo-extra-small;
                     text-align: justify;
 
                 }
@@ -97,10 +98,85 @@ BANGKOK - NORTE - CENTRO - SUR - GASTRONOMIA - CULTURA - TIPS*/
                 }
             }
         }
+        .siguiente{
+            margin-top: 2rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            a{
+                text-decoration: none;
+            }
+            img{
+                margin-bottom: 1rem;
+                width: 5rem;
+            }
+            p{
+                @include condicion(1);
+            }
+        }
+    }
+}
+/*PANTALLA MOBILE SUBPÁGINAS RECORRIDO VIRTUAL*/
+@media only screen and (min-width:400px) {
+    .contenedorSubpagina {
+       
+        main {
+
+            h1 {
+                @include h1mobile;
+                margin-top: -10rem;
+            }
+
+            .tituloGastronomia {
+                h1 {
+                    font-size: $tamanio-h1-mobile - 0.6;
+                }
+            }
+
+            h2 {
+                font-size: 1.7rem;
+            }
+
+            section {
+
+                h3 {
+                    @include tituloCursivaMobile;
+                                  }
+
+                article {
+                  
+                    .image {
+                        img {
+                            width: 23rem;
+                        }
+                    }
+
+                    p {
+                        font-size: $tamanio-parrafo-mobile;
+
+                    }
+
+                    .textoVestimenta {
+                        font-size: $tamanio-parrafo-mobile;
+
+                    }
+                }
+            }
+            .siguiente{
+                margin-top: 4rem;
+                img{
+                    width: 7rem;
+                }
+                p{
+                    @include condicion(2);
+                    text-align: center;
+                }
+            }
+        }
     }
 }
 
-/* PANTALLA  TABLET BANGKOK  */
+/* PANTALLA  TABLET SUBPAGINAS RECORRIDO VIRTUAL  */
 @media only screen and (min-width:768px) {
     .contenedorSubpagina {
         grid-template-columns: 0.5fr 5fr;
@@ -160,12 +236,15 @@ BANGKOK - NORTE - CENTRO - SUR - GASTRONOMIA - CULTURA - TIPS*/
                 align-items: flex-start;
                 margin-left: 2rem;
             }
+            .siguiente{
+                display: none;
+            }
         }
     }
 }
 
 
-/* PANTALLA  DESKTOP BANGKOK  */
+/* PANTALLA  DESKTOP SUBPAGINAS RECORRIDO VIRTUAL  */
 @media only screen and (min-width:1200px) {
     .contenedorSubpagina {
         main {

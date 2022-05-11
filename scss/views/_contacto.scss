@@ -1,4 +1,4 @@
-/* ESTILOS DE CONTACTO MOBILE  */
+/* ESTILOS DE CONTACTO EXTRA SMALL  */
 #bodyContacto {
     background-image: url("../images/fondoContacto.jpg");
     background-position: right;
@@ -8,10 +8,9 @@
 
 main {
     .tituloContacto {
-        margin-top: -4rem;
-
+        margin-top: 2rem;
         h1 {
-            @include h1mobile;
+            @include h1extraSmall;
         }
     }
 
@@ -27,17 +26,17 @@ main {
 
             p {
                 margin-top: 2rem;
-                font-size: $tamanio-parrafo-mobile;
+                font-size: $tamanio-parrafo-extra-small;
                 text-align: center;
                 padding-left: 1rem;
                 padding-right: 1rem;
             }
 
             .iconos {
-                margin-top: 1.5rem;
+                margin-top: 1rem;
 
                 img {
-                    width: 3rem;
+                    width: 2.5rem;
                     margin: 1rem;
                 }
             }
@@ -51,7 +50,7 @@ main {
             legend {
                 text-align: center;
                 font-family: $fuenteCursiva;
-                font-size: 3rem;
+                font-size: 2.5rem;
             }
 
             input {
@@ -59,8 +58,8 @@ main {
             }
 
             .campo {
-                font-size: 1rem;
-                margin: 1rem;
+                font-size: 0.8rem;
+                margin: 0.5rem;
                 color: black;
                 display: flex;
                 justify-content: space-between;
@@ -75,8 +74,8 @@ main {
 
                 .campoComentarios {
                     display: block;
-                    height: 15rem;
-                    width: 22rem;
+                    height: 8rem;
+                    width: 15rem;
                     padding: -5rem;
                     resize: none;
                     overflow: auto;
@@ -89,13 +88,67 @@ main {
 
                 input {
                     background-color: rgba(53, 34, 6, 0.3);
-                    width: 8rem;
+                    width: 6rem;
                     color: white;
                 }
             }
         }
 
     }
+}
+
+/*ESTILOS DE CONTACTO MOBILE*/
+@media only screen and (min-width:400px) {
+    main {
+        .tituloContacto {
+            margin-top: -4rem;
+
+            h1 {
+                @include h1mobile;
+            }
+        }
+
+        .cuerpoContacto {
+            .parrafoContacto {
+                p {   
+                    font-size: $tamanio-parrafo-mobile;
+                }
+
+                .iconos {
+                    margin-top: 1.5rem;
+
+                    img {
+                        width: 3rem;
+                    }
+                }
+            }
+
+            .formulario {
+
+                legend {
+                    font-size: 3rem;
+                }
+
+                .campo {
+                    font-size: 1rem;
+                    margin: 1rem;
+
+                    .campoComentarios {
+                        height: 12rem;
+                        width: 20rem;
+                    }
+                }
+
+                .botones {
+                    input {
+                        width: 8rem;
+                    }
+                }
+            }
+
+        }
+    }
+
 }
 
 /*ESTILOS DE CONTACTO TABLET*/
@@ -131,7 +184,7 @@ main {
                     .campoComentarios {
                         display: block;
                         margin-left: 2rem;
-                        height: 15rem;
+                        height: 12rem;
                         width: 28rem;
                         padding: -5rem;
                         resize: none;

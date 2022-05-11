@@ -5,17 +5,18 @@
     height: auto;
 }
 
-/* PANTALLA  Mobile Recorrido Virtual  */
+/*PANTALLA EXTRA SMALL -400px*/
 main {
     h1 {
-        @include h1mobile;
+        @include h1extraSmall;
+        margin-top: -3rem;
         margin-bottom: 2rem;
     }
 
     .container {
         display: grid;
         grid-template-columns: repeat(5, 1fr);
-        grid-auto-rows: 8rem 14rem 8rem 14rem;
+        grid-auto-rows: 8rem 8rem 8rem 8rem;
         grid-gap: 1rem;
 
         .galleryContainer {
@@ -63,27 +64,25 @@ main {
         }
 
         .gastronomia {
-            grid-column: span 2;
+            grid-column: span 5;
 
             .galleryItem {
                 .text {
-                    font-size: 1.7rem;
+                    font-size: 2rem;
                 }
             }
         }
 
         .bangkok {
             grid-column: span 5;
-            grid-row: span 2;
         }
 
         .norte {
-            grid-column: span 3;
+            grid-column: span 5;
         }
 
         .centro {
-            grid-column: span 3;
-            grid-row: span 2;
+            grid-column: span 5;
         }
 
         .sur {
@@ -91,15 +90,65 @@ main {
         }
 
         .cultura {
-            grid-column: span 2;
+            grid-column: span 5;
         }
 
         .tips {
-            grid-column: span 2;
+            grid-column: span 5;
         }
     }
 }
 
+/* PANTALLA  Mobile Recorrido Virtual  */
+@media only screen and (min-width:400px) {
+    main {
+        h1 {
+            @include h1mobile;
+            margin-top: -5rem;
+        }
+
+        .container {
+            grid-template-columns: repeat(5, 1fr);
+            grid-auto-rows: 8rem 14rem 8rem 14rem;
+
+            .gastronomia {
+                grid-column: span 2;
+
+                .galleryItem {
+                    .text {
+                        font-size: 1.7rem;
+                    }
+                }
+            }
+
+            .bangkok {
+                grid-column: span 5;
+                grid-row: span 2;
+            }
+
+            .norte {
+                grid-column: span 3;
+            }
+
+            .centro {
+                grid-column: span 3;
+                grid-row: span 2;
+            }
+
+            .sur {
+                grid-column: span 5;
+            }
+
+            .cultura {
+                grid-column: span 2;
+            }
+
+            .tips {
+                grid-column: span 2;
+            }
+        }
+    }
+}
 
 /* PANTALLA  TABLET Recorrido Virtual  */
 @media only screen and (min-width:768px) {

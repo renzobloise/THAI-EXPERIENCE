@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .experiencias .opciones h2 {
   padding-top: 2rem;
   font-size: 2.5rem;
@@ -44,7 +45,7 @@ header .navbar-nav {
 header .dropdown-item {
   color: white; }
 
-/* FOOTER PANTALLA MOBILE*/
+/* FOOTER PANTALLA EXTRA SMALL (-400px)*/
 footer {
   padding-top: 8rem;
   height: auto;
@@ -53,21 +54,30 @@ footer {
     display: flex;
     justify-content: center; }
     footer .redes img {
-      width: 2rem;
+      width: 1.8rem;
       margin: 0.8rem; }
   footer .textoFooter {
     padding-top: 1rem;
-    font-size: 1rem;
     text-align: center;
     font-weight: bold; }
+    footer .textoFooter p {
+      font-size: 0.7rem;
+      font-family: "Josefin Sans", sans-serif;
+      font-family: "Roboto", sans-serif;
+      font-family: "Aclonica", sans-serif; }
 
-/* FOOTER PANTALLA DESKTOP*/
+/* FOOTER PANTALLA MOBILE*/
+@media only screen and (min-width: 400px) {
+  footer .textoFooter p {
+    font-size: 0.9rem; } }
+
+/* FOOTER PANTALLA TABLET Y DESKTOP*/
 @media only screen and (min-width: 768px) {
   footer .redes img {
     width: 2.5rem;
     margin: 1rem; }
-  footer p {
-    font-size: 1rem; } }
+  footer .textoFooter p {
+    font-size: 1.1rem; } }
 
 /*ESTILOS PARA EL FOOTER DE EXPERIENCIAS*/
 #footerExperiencias {
@@ -75,57 +85,64 @@ footer {
   margin-bottom: 0rem;
   padding-top: 3rem; }
 
-/*ASIDES DE LAS SUBPAGINAS DE RECORRIDO VIRTUAL PANTALLA MOBILE*/
+/*ASIDES DE LAS SUBPAGINAS DE RECORRIDO VIRTUAL NO LOS MUESTRO EN LA PANTALLA EXTRA SMALL (-400px)*/
 #asideUno {
-  grid-area: asideUno;
-  background-color: #121010;
-  display: flex;
-  flex-direction: row; }
-  #asideUno h2 {
-    display: none; }
-    #asideUno h2 a {
-      text-decoration: none;
-      font-family: "Aclonica", sans-serif;
-      color: white; }
-  #asideUno ul {
-    margin-left: 0rem;
-    margin-top: 6rem;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly; }
-    #asideUno ul li {
-      list-style: none;
-      padding-right: 3rem;
-      padding-top: 2rem; }
-      #asideUno ul li a {
-        text-decoration: none;
-        color: white;
-        font-family: "Water Brush", cursive;
-        font-size: 1.5rem; }
+  display: none; }
 
 #asideDos {
-  grid-area: asideDos;
-  background-color: #121010;
-  display: flex;
-  flex-direction: row; }
-  #asideDos h2 {
-    display: none; }
-  #asideDos ul {
-    margin-left: 0rem;
-    margin-top: -2rem;
+  display: none; }
+
+/*ASIDE PANTALLA MOBILE*/
+@media only screen and (min-width: 400px) {
+  #asideUno {
+    grid-area: asideUno;
+    background-color: #121010;
     display: flex;
-    flex-direction: row;
-    align-content: space-evenly; }
-    #asideDos ul li {
-      list-style: none;
-      padding-top: 2rem;
-      padding-left: 1.3rem;
-      padding-right: 1.7rem; }
-      #asideDos ul li a {
+    flex-direction: row; }
+    #asideUno h2 {
+      display: none; }
+      #asideUno h2 a {
         text-decoration: none;
-        color: white;
-        font-family: "Water Brush", cursive;
-        font-size: 1.5rem; }
+        font-family: "Aclonica", sans-serif;
+        color: white; }
+    #asideUno ul {
+      margin-left: 0rem;
+      padding-top: 6rem;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly; }
+      #asideUno ul li {
+        list-style: none;
+        padding-right: 2rem;
+        padding-top: 2rem; }
+        #asideUno ul li a {
+          text-decoration: none;
+          color: white;
+          font-family: "Water Brush", cursive;
+          font-size: 1.5rem; }
+  #asideDos {
+    grid-area: asideDos;
+    background-color: #121010;
+    display: flex;
+    flex-direction: row; }
+    #asideDos h2 {
+      display: none; }
+    #asideDos ul {
+      margin-left: 0rem;
+      margin-top: -2rem;
+      display: flex;
+      flex-direction: row;
+      align-content: space-evenly; }
+      #asideDos ul li {
+        list-style: none;
+        padding-top: 2rem;
+        padding-left: 1.3rem;
+        padding-right: 1.5rem; }
+        #asideDos ul li a {
+          text-decoration: none;
+          color: white;
+          font-family: "Water Brush", cursive;
+          font-size: 1.5rem; } }
 
 /*ASIDE PANTALLA TABLET Y DESKTOP*/
 @media only screen and (min-width: 768px) {
@@ -138,7 +155,8 @@ footer {
       margin-top: 10rem; }
     #asideUno ul {
       flex-direction: column;
-      margin-top: 1rem; }
+      margin-top: 1rem;
+      padding-top: 0rem; }
       #asideUno ul li a {
         padding: 1.1rem;
         font-size: 2rem; }
@@ -253,7 +271,7 @@ main {
     .mainSomos .cuerpoQuienes .textoQuienes p {
       background-color: rgba(183, 123, 21, 0.4);
       margin-top: 1rem;
-      font-size: 0.8rem;
+      font-size: 0.9rem;
       margin-left: 1rem;
       margin-right: 1rem;
       padding: 0.5rem;
@@ -278,7 +296,7 @@ main {
   padding-bottom: 5rem; }
   .mainSomos .nosotros .cuerpoNosotros p {
     text-align: justify;
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     padding: 1rem;
     font-family: "Aclonica", sans-serif; }
   .mainSomos .nosotros .cuerpoNosotros img {
@@ -398,7 +416,7 @@ main {
     margin-right: 1rem; }
     .mainExperiencias .primerParrafo p {
       margin-top: -1rem;
-      font-size: 0.9rem;
+      font-size: 1rem;
       background-color: rgba(27, 31, 30, 0.5);
       width: 17rem;
       text-align: justify; }
@@ -414,7 +432,7 @@ main {
     .experiencias .opciones h2 {
       font-family: "Water Brush", cursive; }
     .experiencias .opciones .descripcion {
-      font-size: 0.9rem;
+      font-size: 1rem;
       margin: 1rem;
       text-align: justify; }
       .experiencias .opciones .descripcion button {
@@ -504,7 +522,7 @@ main {
     .experiencias .opciones .descripcion button a {
       font-size: 1.5rem; } }
 
-/* ESTILOS DE CONTACTO MOBILE  */
+/* ESTILOS DE CONTACTO EXTRA SMALL  */
 #bodyContacto {
   background-image: url("../images/fondoContacto.jpg");
   background-position: right;
@@ -512,10 +530,10 @@ main {
   height: auto; }
 
 main .tituloContacto {
-  margin-top: -4rem; }
+  margin-top: 2rem; }
   main .tituloContacto h1 {
     text-align: center;
-    font-size: 3.5rem;
+    font-size: 2.2rem;
     font-weight: bold;
     font-family: "Josefin Sans", sans-serif;
     font-family: "Roboto", sans-serif;
@@ -537,14 +555,14 @@ main .cuerpoContacto {
     margin-bottom: 4rem; }
     main .cuerpoContacto .parrafoContacto p {
       margin-top: 2rem;
-      font-size: 1.1rem;
+      font-size: 0.9rem;
       text-align: center;
       padding-left: 1rem;
       padding-right: 1rem; }
     main .cuerpoContacto .parrafoContacto .iconos {
-      margin-top: 1.5rem; }
+      margin-top: 1rem; }
       main .cuerpoContacto .parrafoContacto .iconos img {
-        width: 3rem;
+        width: 2.5rem;
         margin: 1rem; }
   main .cuerpoContacto .formulario {
     background-color: rgba(53, 34, 6, 0.3);
@@ -553,12 +571,12 @@ main .cuerpoContacto {
     main .cuerpoContacto .formulario legend {
       text-align: center;
       font-family: "Water Brush", cursive;
-      font-size: 3rem; }
+      font-size: 2.5rem; }
     main .cuerpoContacto .formulario input {
       color: black; }
     main .cuerpoContacto .formulario .campo {
-      font-size: 1rem;
-      margin: 1rem;
+      font-size: 0.8rem;
+      margin: 0.5rem;
       color: black;
       display: flex;
       justify-content: space-between; }
@@ -568,8 +586,8 @@ main .cuerpoContacto {
         color: black; }
       main .cuerpoContacto .formulario .campo .campoComentarios {
         display: block;
-        height: 15rem;
-        width: 22rem;
+        height: 8rem;
+        width: 15rem;
         padding: -5rem;
         resize: none;
         overflow: auto; }
@@ -578,8 +596,36 @@ main .cuerpoContacto {
       justify-content: center; }
       main .cuerpoContacto .formulario .botones input {
         background-color: rgba(53, 34, 6, 0.3);
-        width: 8rem;
+        width: 6rem;
         color: white; }
+
+/*ESTILOS DE CONTACTO MOBILE*/
+@media only screen and (min-width: 400px) {
+  main .tituloContacto {
+    margin-top: -4rem; }
+    main .tituloContacto h1 {
+      text-align: center;
+      font-size: 3.5rem;
+      font-weight: bold;
+      font-family: "Josefin Sans", sans-serif;
+      font-family: "Roboto", sans-serif;
+      font-family: "Aclonica", sans-serif; }
+  main .cuerpoContacto .parrafoContacto p {
+    font-size: 1.1rem; }
+  main .cuerpoContacto .parrafoContacto .iconos {
+    margin-top: 1.5rem; }
+    main .cuerpoContacto .parrafoContacto .iconos img {
+      width: 3rem; }
+  main .cuerpoContacto .formulario legend {
+    font-size: 3rem; }
+  main .cuerpoContacto .formulario .campo {
+    font-size: 1rem;
+    margin: 1rem; }
+    main .cuerpoContacto .formulario .campo .campoComentarios {
+      height: 12rem;
+      width: 20rem; }
+  main .cuerpoContacto .formulario .botones input {
+    width: 8rem; } }
 
 /*ESTILOS DE CONTACTO TABLET*/
 @media only screen and (min-width: 768px) {
@@ -602,7 +648,7 @@ main .cuerpoContacto {
       main .cuerpoContacto .formulario .campo .campoComentarios {
         display: block;
         margin-left: 2rem;
-        height: 15rem;
+        height: 12rem;
         width: 28rem;
         padding: -5rem;
         resize: none;
@@ -642,20 +688,21 @@ main .cuerpoContacto {
   background-size: cover;
   height: auto; }
 
-/* PANTALLA  Mobile Recorrido Virtual  */
+/*PANTALLA EXTRA SMALL -400px*/
 main h1 {
   text-align: center;
-  font-size: 3.5rem;
+  font-size: 2.2rem;
   font-weight: bold;
   font-family: "Josefin Sans", sans-serif;
   font-family: "Roboto", sans-serif;
   font-family: "Aclonica", sans-serif;
+  margin-top: -3rem;
   margin-bottom: 2rem; }
 
 main .container {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  grid-auto-rows: 8rem 14rem 8rem 14rem;
+  grid-auto-rows: 8rem 8rem 8rem 8rem;
   grid-gap: 1rem; }
   main .container .galleryContainer .galleryItem {
     width: 100%;
@@ -690,23 +737,53 @@ main .container {
       padding-left: 0.7rem;
       padding-right: 0.7rem; }
   main .container .gastronomia {
-    grid-column: span 2; }
+    grid-column: span 5; }
     main .container .gastronomia .galleryItem .text {
-      font-size: 1.7rem; }
+      font-size: 2rem; }
   main .container .bangkok {
-    grid-column: span 5;
-    grid-row: span 2; }
+    grid-column: span 5; }
   main .container .norte {
-    grid-column: span 3; }
+    grid-column: span 5; }
   main .container .centro {
-    grid-column: span 3;
-    grid-row: span 2; }
+    grid-column: span 5; }
   main .container .sur {
     grid-column: span 5; }
   main .container .cultura {
-    grid-column: span 2; }
+    grid-column: span 5; }
   main .container .tips {
-    grid-column: span 2; }
+    grid-column: span 5; }
+
+/* PANTALLA  Mobile Recorrido Virtual  */
+@media only screen and (min-width: 400px) {
+  main h1 {
+    text-align: center;
+    font-size: 3.5rem;
+    font-weight: bold;
+    font-family: "Josefin Sans", sans-serif;
+    font-family: "Roboto", sans-serif;
+    font-family: "Aclonica", sans-serif;
+    margin-top: -5rem; }
+  main .container {
+    grid-template-columns: repeat(5, 1fr);
+    grid-auto-rows: 8rem 14rem 8rem 14rem; }
+    main .container .gastronomia {
+      grid-column: span 2; }
+      main .container .gastronomia .galleryItem .text {
+        font-size: 1.7rem; }
+    main .container .bangkok {
+      grid-column: span 5;
+      grid-row: span 2; }
+    main .container .norte {
+      grid-column: span 3; }
+    main .container .centro {
+      grid-column: span 3;
+      grid-row: span 2; }
+    main .container .sur {
+      grid-column: span 5; }
+    main .container .cultura {
+      grid-column: span 2; }
+    main .container .tips {
+      grid-column: span 2; } }
 
 /* PANTALLA  TABLET Recorrido Virtual  */
 @media only screen and (min-width: 768px) {
@@ -784,31 +861,31 @@ BANGKOK - NORTE - CENTRO - SUR - GASTRONOMIA - CULTURA - TIPS*/
 #bodyTips {
   background: linear-gradient(90deg, #918f8c 64%, rgba(11, 26, 210, 0.616684) 100%); }
 
-/*PANTALLA MOBILE*/
+/*PANTALLA EXTRA SMALL -400px*/
 .contenedorSubpagina {
   display: grid;
   height: 100vh;
-  grid-template-areas: "asideUno asideUno " "asideDos asideDos" "main main " "footer footer"; }
+  grid-template-areas: "asideUno" "asideDos" "main" "footer"; }
   .contenedorSubpagina main {
     grid-area: main; }
     .contenedorSubpagina main h1 {
       text-align: center;
-      font-size: 3.5rem;
+      font-size: 2.2rem;
       font-weight: bold;
       font-family: "Josefin Sans", sans-serif;
       font-family: "Roboto", sans-serif;
       font-family: "Aclonica", sans-serif;
-      margin-top: -8rem; }
+      margin-top: -4rem; }
     .contenedorSubpagina main .tituloGastronomia h1 {
-      font-size: 3rem; }
+      font-size: 1.7rem; }
     .contenedorSubpagina main h2 {
       text-align: center;
       font-family: "Aclonica", sans-serif;
-      font-size: 1.7rem; }
+      font-size: 1.4rem; }
     .contenedorSubpagina main section {
       display: flex;
       flex-direction: column;
-      margin-top: 4rem;
+      margin-top: 2rem;
       align-items: center;
       flex-wrap: nowrap; }
       .contenedorSubpagina main section h3 {
@@ -816,25 +893,75 @@ BANGKOK - NORTE - CENTRO - SUR - GASTRONOMIA - CULTURA - TIPS*/
         font-family: "Roboto", sans-serif;
         font-family: "Water Brush", cursive;
         text-align: center;
-        font-size: 2.5rem;
+        font-size: 2rem;
         margin: 0.5rem; }
       .contenedorSubpagina main section article {
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin: 1.5rem; }
+        margin: 1rem; }
         .contenedorSubpagina main section article .image img {
           border-radius: 10%;
-          width: 23rem;
+          width: 13rem;
           height: auto; }
         .contenedorSubpagina main section article p {
           margin: 1rem;
-          font-size: 1.1rem;
+          font-size: 0.9rem;
           text-align: justify; }
         .contenedorSubpagina main section article .textoVestimenta {
           font-size: 1.1rem; }
+    .contenedorSubpagina main .siguiente {
+      margin-top: 2rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+      .contenedorSubpagina main .siguiente a {
+        text-decoration: none; }
+      .contenedorSubpagina main .siguiente img {
+        margin-bottom: 1rem;
+        width: 5rem; }
+      .contenedorSubpagina main .siguiente p {
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 1.2rem;
+        text-align: center; }
 
-/* PANTALLA  TABLET BANGKOK  */
+/*PANTALLA MOBILE SUBPÁGINAS RECORRIDO VIRTUAL*/
+@media only screen and (min-width: 400px) {
+  .contenedorSubpagina main h1 {
+    text-align: center;
+    font-size: 3.5rem;
+    font-weight: bold;
+    font-family: "Josefin Sans", sans-serif;
+    font-family: "Roboto", sans-serif;
+    font-family: "Aclonica", sans-serif;
+    margin-top: -10rem; }
+  .contenedorSubpagina main .tituloGastronomia h1 {
+    font-size: 2.9rem; }
+  .contenedorSubpagina main h2 {
+    font-size: 1.7rem; }
+  .contenedorSubpagina main section h3 {
+    font-family: "Josefin Sans", sans-serif;
+    font-family: "Roboto", sans-serif;
+    font-family: "Water Brush", cursive;
+    text-align: center;
+    font-size: 2.5rem; }
+  .contenedorSubpagina main section article .image img {
+    width: 23rem; }
+  .contenedorSubpagina main section article p {
+    font-size: 1.1rem; }
+  .contenedorSubpagina main section article .textoVestimenta {
+    font-size: 1.1rem; }
+  .contenedorSubpagina main .siguiente {
+    margin-top: 4rem; }
+    .contenedorSubpagina main .siguiente img {
+      width: 7rem; }
+    .contenedorSubpagina main .siguiente p {
+      font-family: "Water Brush", cursive;
+      font-size: 2rem;
+      text-align: center;
+      text-align: center; } }
+
+/* PANTALLA  TABLET SUBPAGINAS RECORRIDO VIRTUAL  */
 @media only screen and (min-width: 768px) {
   .contenedorSubpagina {
     grid-template-columns: 0.5fr 5fr;
@@ -875,9 +1002,11 @@ BANGKOK - NORTE - CENTRO - SUR - GASTRONOMIA - CULTURA - TIPS*/
           font-size: 1.3rem; }
     .contenedorSubpagina main .sectionDos {
       align-items: flex-start;
-      margin-left: 2rem; } }
+      margin-left: 2rem; }
+    .contenedorSubpagina main .siguiente {
+      display: none; } }
 
-/* PANTALLA  DESKTOP BANGKOK  */
+/* PANTALLA  DESKTOP SUBPAGINAS RECORRIDO VIRTUAL  */
 @media only screen and (min-width: 1200px) {
   .contenedorSubpagina main h1 {
     font-size: 5rem;

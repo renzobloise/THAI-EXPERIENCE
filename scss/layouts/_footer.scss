@@ -1,25 +1,47 @@
-/* FOOTER PANTALLA MOBILE*/
-footer {  
+/* FOOTER PANTALLA EXTRA SMALL (-400px)*/
+footer {
     padding-top: 8rem;
     height: auto;
-    grid-area: footer;  
+    grid-area: footer;
+
     .redes {
         display: flex;
         justify-content: center;
+
         img {
-            width: 2rem;
+            width: 1.8rem;
             margin: 0.8rem;
         }
     }
-    .textoFooter{
-       padding-top: 1rem;
-        font-size: 1rem;
+
+    .textoFooter {
+        padding-top: 1rem;
         text-align: center;
         font-weight: bold;
+
+        p {
+            font-size: 0.7rem;
+            font-family: $fuente-terciaria;
+            font-family: $fuente-secundaria;
+            font-family: $fuente-principal;
+        }
+
     }
 }
 
-/* FOOTER PANTALLA DESKTOP*/
+/* FOOTER PANTALLA MOBILE*/
+@media only screen and (min-width:400px) {
+    footer {
+
+        .textoFooter {
+            p {
+                font-size: 0.9rem;
+            }
+        }
+    }
+}
+
+/* FOOTER PANTALLA TABLET Y DESKTOP*/
 @media only screen and (min-width:768px) {
     footer {
         .redes {
@@ -28,14 +50,17 @@ footer {
                 margin: 1rem;
             }
         }
-        p {
-            font-size: 1rem;
+
+        .textoFooter {
+            p {
+                font-size: 1.1rem;
+            }
         }
     }
 }
 
 /*ESTILOS PARA EL FOOTER DE EXPERIENCIAS*/
-#footerExperiencias{
+#footerExperiencias {
     margin-top: 0rem;
     margin-bottom: 0rem;
     padding-top: 3rem;
