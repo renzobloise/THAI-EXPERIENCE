@@ -192,6 +192,7 @@ main {
     background-color: rgba(7, 115, 81, 0.4);
     margin: 1rem; }
     main .contenidoMain h1 {
+      margin-top: 2rem;
       font-size: 2.2rem; }
     main .contenidoMain a {
       text-decoration: none; }
@@ -200,13 +201,15 @@ main {
     main .contenidoMain p {
       font-family: "Aclonica", sans-serif;
       font-size: 1.7rem;
-      text-align: center; }
+      text-align: center;
+      margin-bottom: 1rem; }
 
 /*ESTILOS INDEX PANTALLA  MOBILE*/
 @media only screen and (min-width: 400px) {
   main {
     margin-top: 16rem; }
     main .contenidoMain h1 {
+      margin-top: 5rem;
       text-align: center;
       font-size: 3.5rem;
       font-weight: bold;
@@ -214,7 +217,8 @@ main {
       font-family: "Roboto", sans-serif;
       font-family: "Aclonica", sans-serif; }
     main .contenidoMain p {
-      font-size: 2.2rem; } }
+      font-size: 2.2rem;
+      margin-bottom: 8rem; } }
 
 /*ESTILOS INDEX PANTALLA TABLET*/
 @media only screen and (min-width: 768px) {
